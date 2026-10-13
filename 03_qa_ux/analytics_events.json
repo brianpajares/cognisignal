@@ -1,0 +1,134 @@
+{
+  "principles": [
+    "No enviar valores cognitivos crudos a analytics de marketing.",
+    "Usar IDs pseudónimos y eventos agregados.",
+    "No registrar texto libre de salud."
+  ],
+  "events": [
+    {
+      "name": "landing_view",
+      "properties": [
+        "locale",
+        "country"
+      ]
+    },
+    {
+      "name": "assessment_start",
+      "properties": [
+        "locale",
+        "country",
+        "source"
+      ]
+    },
+    {
+      "name": "step_view",
+      "properties": [
+        "step_id",
+        "position",
+        "total"
+      ]
+    },
+    {
+      "name": "step_complete",
+      "properties": [
+        "step_id",
+        "validation_errors"
+      ]
+    },
+    {
+      "name": "assessment_complete",
+      "properties": [
+        "valid_session_count",
+        "quality_pass"
+      ]
+    },
+    {
+      "name": "processing_view",
+      "properties": [
+        "duration_bucket_ms"
+      ]
+    },
+    {
+      "name": "preview_view",
+      "properties": [
+        "category",
+        "signal_bucket_10"
+      ]
+    },
+    {
+      "name": "report_gate_view",
+      "properties": [
+        "category",
+        "locale"
+      ]
+    },
+    {
+      "name": "report_request_submit",
+      "properties": [
+        "consent_version",
+        "locale"
+      ]
+    },
+    {
+      "name": "report_request_success",
+      "properties": [
+        "locale"
+      ]
+    },
+    {
+      "name": "paywall_view",
+      "properties": [
+        "country",
+        "offer_id"
+      ]
+    },
+    {
+      "name": "checkout_start",
+      "properties": [
+        "country",
+        "currency",
+        "offer_id"
+      ]
+    },
+    {
+      "name": "purchase_success",
+      "properties": [
+        "country",
+        "currency",
+        "offer_id"
+      ]
+    },
+    {
+      "name": "methodology_open",
+      "properties": [
+        "source_screen"
+      ]
+    },
+    {
+      "name": "privacy_open",
+      "properties": [
+        "source_screen"
+      ]
+    },
+    {
+      "name": "faq_open",
+      "properties": [
+        "faq_id"
+      ]
+    },
+    {
+      "name": "report_download",
+      "properties": [
+        "report_version",
+        "locale"
+      ]
+    },
+    {
+      "name": "error_shown",
+      "properties": [
+        "error_code",
+        "screen_id"
+      ]
+    }
+  ]
+}

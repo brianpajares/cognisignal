@@ -1,0 +1,89 @@
+{
+  "app_slug": "cognisignal",
+  "version": "3.0",
+  "generated_at": "2026-10-13",
+  "drive_root": "/Apps/cognisignal/",
+  "files": [
+    {
+      "file": "base_cognisignal.xlsx",
+      "drive_path": "/Apps/cognisignal/base/base_cognisignal.xlsx",
+      "purpose": "Fuente de verdad: parámetros, tablas, fórmulas del motor, casos y fuentes.",
+      "format": "xlsx",
+      "read_by": "app",
+      "sha256": "941c0a7fe0514e9675daf18a1f3949a4be151b94396f7e51783e15cd8b4cb843",
+      "version": "3.0"
+    },
+    {
+      "file": "fuentes_datos.csv",
+      "drive_path": "/Apps/cognisignal/base/fuentes_datos.csv",
+      "purpose": "Registro auditable de fuentes, licencias y estado de verificación.",
+      "format": "csv",
+      "read_by": "build",
+      "sha256": "85644926347aa35d788e40ad18f0d61d19be26496b02bce6b1006363965bc370",
+      "version": "2.0"
+    },
+    {
+      "file": "worldbank_ppp_2025_sample.csv",
+      "drive_path": "/Apps/cognisignal/base/worldbank_ppp_2025_sample.csv",
+      "purpose": "Snapshot de PPP 2025 para los cinco mercados MVP.",
+      "format": "csv",
+      "read_by": "build",
+      "sha256": "b6f5b9ecc240274a93aacbbba178159b56eda663b92d6e416893e5400107506d",
+      "version": "2.0"
+    },
+    {
+      "file": "model_card.md",
+      "drive_path": "/Apps/cognisignal/docs/model_card.md",
+      "purpose": "Página 'Cómo funciona': método, confianza, límites y disclaimer.",
+      "format": "md",
+      "read_by": "app",
+      "sha256": "619219c10f12a43e98615674b36e9f62bcbc1b7a5ab3fa5f2186b83a5900c3f2",
+      "version": "2.0"
+    },
+    {
+      "file": "README.md",
+      "drive_path": "/Apps/cognisignal/model/README.md",
+      "purpose": "Instrucciones de integración del motor.",
+      "format": "md",
+      "read_by": "build",
+      "sha256": "2b1c3803e5cf1cdd7d89a5820b724329b917a3a11a8c5a1ce8ef9ca1876ce11a",
+      "version": "2.0"
+    },
+    {
+      "file": "engine_reference.py",
+      "drive_path": "/Apps/cognisignal/model/engine_reference.py",
+      "purpose": "Implementación de referencia del cálculo CS-LCM.",
+      "format": "python",
+      "read_by": "build",
+      "sha256": "e2813784d257d2001df3a12c1b9e25a9cc3217800737238137624350a3a3ae50",
+      "version": "3.0"
+    },
+    {
+      "file": "parameters_snapshot.json",
+      "drive_path": "/Apps/cognisignal/model/parameters_snapshot.json",
+      "purpose": "Snapshot legible de parámetros; no sustituye al Excel.",
+      "format": "json",
+      "read_by": "build",
+      "sha256": "5cca6021ec1b1ea77cff5ce1c914cba7f30e195e3575af8ddb007775bf37df5b",
+      "version": "2.0"
+    },
+    {
+      "file": "test_vectors.json",
+      "drive_path": "/Apps/cognisignal/model/test_vectors.json",
+      "purpose": "Vectores de regresión con outputs ejecutados contra el Excel.",
+      "format": "json",
+      "read_by": "build",
+      "sha256": "73eae8bbad329b6916568a5d3d68d1b029f0d812900413a8057268e1367c7e04",
+      "version": "3.0"
+    },
+    {
+      "file": "report_template.json",
+      "drive_path": "/Apps/cognisignal/templates/report_template.json",
+      "purpose": "Estructura multilingüe del informe gratuito/de pago.",
+      "format": "json",
+      "read_by": "app",
+      "sha256": "b82a2da520a607ef300bb720066f7e970462b4435966f7f5a83a325ae9e81bfe",
+      "version": "2.0"
+    }
+  ]
+}

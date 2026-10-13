@@ -1,0 +1,21 @@
+# LAUNCH CHECKLIST
+
+- [ ] Dominio y HTTPS activos.
+- [ ] Naming/trademark revisado antes de inversión relevante.
+- [ ] Variables de `.env.example` configuradas sin placeholders inválidos.
+- [ ] Supabase migrado y RLS probado.
+- [ ] Drive compartido con service account; sync y fallback verificados.
+- [ ] Resend domain verificado; SPF, DKIM y DMARC publicados.
+- [ ] Legal: privacidad, términos, consentimiento y disclaimer publicados; revisión local cuando aplique.
+- [ ] es/en/pt revisados.
+- [ ] PostHog sin PII; Sentry con scrubbing.
+- [ ] Turnstile/rate limit activos.
+- [ ] 20/20 vectores, unit, Playwright y build verdes.
+- [ ] Lighthouse móvil >=90.
+- [ ] PDF real generado y abierto.
+- [ ] Email real de punta a punta al usuario de prueba y OWNER_EMAIL.
+- [ ] `/admin` protegido y funcional.
+- [ ] SEO público; resultados/admin no indexables.
+- [ ] `MONETIZATION_MODE=validation` salvo decisión explícita.
+- [ ] Smoke test en producción: landing→sesión→preview→lead→PDF→email.
+- [ ] Rollback de deployment documentado.

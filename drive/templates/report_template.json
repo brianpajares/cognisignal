@@ -1,0 +1,119 @@
+{
+  "version": "1.0",
+  "model_version": "CS-LCM-1.0",
+  "sections": [
+    {
+      "id": "summary",
+      "access": "free",
+      "titles": {
+        "es": "Tu señal cognitiva de hoy",
+        "en": "Your cognitive signal today",
+        "pt": "Seu sinal cognitivo hoje"
+      },
+      "fields": [
+        "signal_index_0_100",
+        "category",
+        "free_insight"
+      ]
+    },
+    {
+      "id": "trend",
+      "access": "free",
+      "titles": {
+        "es": "Tu tendencia",
+        "en": "Your trend",
+        "pt": "Sua tendência"
+      },
+      "fields": [
+        "monitoring_composite_z_series",
+        "warn_limit",
+        "action_limit"
+      ]
+    },
+    {
+      "id": "domains",
+      "access": "paid",
+      "titles": {
+        "es": "Qué está impulsando el cambio",
+        "en": "What is driving the change",
+        "pt": "O que está impulsionando a mudança"
+      },
+      "fields": [
+        "domain_z_latest",
+        "baseline_domain_stats"
+      ]
+    },
+    {
+      "id": "comparison",
+      "access": "paid",
+      "titles": {
+        "es": "Comparado con tu baseline",
+        "en": "Compared with your baseline",
+        "pt": "Comparado ao seu baseline"
+      },
+      "fields": [
+        "domain_z_latest",
+        "latest_composite_z"
+      ],
+      "rules": "Comparación intraindividual. No mostrar percentiles por país/edad/educación hasta validación normativa."
+    },
+    {
+      "id": "sensitivity",
+      "access": "paid",
+      "titles": {
+        "es": "Qué tan robusta es la señal",
+        "en": "How robust is the signal",
+        "pt": "Quão robusto é o sinal"
+      },
+      "fields": [
+        "sensitivity"
+      ]
+    },
+    {
+      "id": "quality_context",
+      "access": "paid",
+      "titles": {
+        "es": "Calidad y contexto",
+        "en": "Quality and context",
+        "pt": "Qualidade e contexto"
+      },
+      "fields": [
+        "quality_excluded_sessions",
+        "context_flags"
+      ]
+    },
+    {
+      "id": "next_steps",
+      "access": "paid",
+      "titles": {
+        "es": "Próximos pasos",
+        "en": "Next steps",
+        "pt": "Próximos passos"
+      },
+      "fields": [
+        "category",
+        "context_flags"
+      ],
+      "rules": "No diagnosis, medication or treatment. Re-test under comparable conditions; discuss functional concerns with clinician regardless of score."
+    },
+    {
+      "id": "method",
+      "access": "paid",
+      "titles": {
+        "es": "Cómo se calculó",
+        "en": "How it was calculated",
+        "pt": "Como foi calculado"
+      },
+      "fields": [
+        "model_version",
+        "warn_limit",
+        "action_limit"
+      ]
+    }
+  ],
+  "disclaimer": {
+    "es": "CogniSignal no diagnostica Alzheimer, MCI ni demencia. Un resultado estable no descarta enfermedad.",
+    "en": "CogniSignal does not diagnose Alzheimer's, MCI, or dementia. A stable result does not rule out disease.",
+    "pt": "CogniSignal não diagnostica Alzheimer, CCL/MCI ou demência. Um resultado estável não exclui doença."
+  }
+}

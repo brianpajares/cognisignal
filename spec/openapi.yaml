@@ -1,0 +1,140 @@
+openapi: 3.1.0
+info:
+  title: CogniSignal API
+  version: 4.0.0
+  description: API del MVP no diagnóstico de CogniSignal.
+servers:
+  - url: /api
+paths:
+  /health:
+    get:
+      operationId: health
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok: {type: boolean}
+                  version: {type: string}
+                required: [ok, version]
+  /calculate:
+    post:
+      operationId: calculate
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "./inputs.schema.json"
+      responses:
+        "200":
+          description: Resultado CS-LCM
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        "400": {description: Input inválido}
+        "429": {description: Rate limit}
+  /report-requests:
+    post:
+      operationId: createReportRequest
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              required: [calculation_id, email, consent, locale]
+              properties:
+                calculation_id: {type: string, format: uuid}
+                email: {type: string, format: email}
+                consent: {type: boolean, const: true}
+                locale: {type: string, enum: [es, en, pt]}
+                waitlist: {type: boolean, default: false}
+                turnstile_token: {type: string}
+      responses:
+        "201":
+          description: Solicitud creada
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [id, status]
+                properties:
+                  id: {type: string, format: uuid}
+                  status: {type: string, enum: [requested, generated, sent, failed]}
+        "400": {description: Solicitud inválida}
+        "429": {description: Rate limit}
+  /reports/{id}/pdf:
+    get:
+      operationId: getReportPdf
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: {type: string, format: uuid}
+      responses:
+        "200":
+          description: PDF
+          content:
+            application/pdf:
+              schema: {type: string, contentEncoding: binary}
+        "404": {description: No encontrado}
+  /admin/leads:
+    get:
+      operationId: listLeads
+      responses:
+        "200":
+          description: Leads y embudo
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        "401": {description: No autorizado}
+  /admin/reports/{id}/resend:
+    post:
+      operationId: resendReport
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: {type: string, format: uuid}
+      responses:
+        "202": {description: Reenvío encolado}
+        "401": {description: No autorizado}
+        "404": {description: No encontrado}
+  /drive/status:
+    get:
+      operationId: driveStatus
+      responses:
+        "200":
+          description: Estado de manifest/cache
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  source: {type: string, enum: [drive, cache]}
+                  checked_at: {type: string, format: date-time}
+                  valid: {type: boolean}
+                required: [source, checked_at, valid]
+  /stripe/webhook:
+    post:
+      operationId: stripeWebhook
+      description: Solo activo con MONETIZATION_MODE=stripe. Firma obligatoria e idempotencia por event id.
+      responses:
+        "200": {description: Procesado o ya procesado}
+        "400": {description: Firma inválida}
+components:
+  securitySchemes:
+    adminSession:
+      type: apiKey
+      in: cookie
+      name: cs_admin

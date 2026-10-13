@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cognisignal.local/schemas/inputs.schema.json",
+  "title": "CogniSignal inputs CS-LCM v1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "age_years",
+    "country_code",
+    "language",
+    "education_band",
+    "context_issue",
+    "self_report_change_6m",
+    "sessions"
+  ],
+  "properties": {
+    "age_years": {
+      "type": "integer",
+      "minimum": 55,
+      "maximum": 90,
+      "default": 61,
+      "unit": "years",
+      "required": true,
+      "help": {
+        "es": "Tu edad en años. En v1 solo define elegibilidad; no cambia el score.",
+        "en": "Your age in years. In v1 it only defines eligibility; it does not change the score.",
+        "pt": "Sua idade em anos. Na v1 define apenas elegibilidade; não altera o score."
+      },
+      "where_to_find": {
+        "es": "La sabes de memoria o figura en tu documento de identidad.",
+        "en": "You usually know it or can find it on your ID.",
+        "pt": "Você normalmente sabe ou encontra no documento de identidade."
+      }
+    },
+    "country_code": {
+      "type": "string",
+      "enum": [
+        "US",
+        "GB",
+        "ES",
+        "BR",
+        "MX"
+      ],
+      "default": "US",
+      "unit": "country code",
+      "required": true,
+      "help": {
+        "es": "País para idioma, aviso legal y precio local; no modifica el cálculo cognitivo.",
+        "en": "Country for language, legal copy and local pricing; it does not change the cognitive calculation.",
+        "pt": "País para idioma, aviso legal e preço local; não altera o cálculo cognitivo."
+      },
+      "where_to_find": {
+        "es": "Tu país de residencia.",
+        "en": "Your country of residence.",
+        "pt": "Seu país de residência."
+      }
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "en",
+        "es",
+        "pt"
+      ],
+      "default": "en",
+      "unit": "language",
+      "required": true,
+      "help": {
+        "es": "Idioma de las instrucciones del test.",
+        "en": "Language used for test instructions.",
+        "pt": "Idioma das instruções do teste."
+      },
+      "where_to_find": {
+        "es": "Elige el idioma en el que prefieres hacer el test.",
+        "en": "Choose the language you prefer for the test.",
+        "pt": "Escolha o idioma em que prefere fazer o teste."
+      }
+    },
+    "education_band": {
+      "type": "string",
+      "enum": [
+        "primary_or_less",
+        "secondary",
+        "tertiary"
+      ],
+      "default": "secondary",
+      "unit": "category",
+      "required": true,
+      "help": {
+        "es": "Se guarda para validación de sesgo futura; en v1 no ajusta el score.",
+        "en": "Stored for future bias validation; in v1 it does not adjust the score.",
+        "pt": "Armazenado para futura validação de viés; na v1 não ajusta o score."
+      },
+      "where_to_find": {
+        "es": "Tu máximo nivel educativo completado.",
+        "en": "Your highest completed education level.",
+        "pt": "Seu nível de escolaridade mais alto concluído."
+      }
+    },
+    "context_issue": {
+      "type": "string",
+      "enum": [
+        "none",
+        "poor_sleep",
+        "acute_illness",
+        "unusual_stress",
+        "medication_change",
+        "other"
+      ],
+      "default": "none",
+      "unit": "category",
+      "required": true,
+      "help": {
+        "es": "Marca si hoy hay algo inusual que podría afectar tu rendimiento. Se muestra como contexto, no corrige el score.",
+        "en": "Mark whether something unusual today could affect performance. It is shown as context and does not adjust the score.",
+        "pt": "Marque se algo incomum hoje pode afetar o desempenho. É mostrado como contexto e não corrige o score."
+      },
+      "where_to_find": {
+        "es": "Tu percepción de hoy; no necesitas registros médicos.",
+        "en": "Your own assessment today; no medical record is needed.",
+        "pt": "Sua própria percepção hoje; não é necessário prontuário médico."
+      }
+    },
+    "self_report_change_6m": {
+      "type": "string",
+      "enum": [
+        "no",
+        "unsure",
+        "yes"
+      ],
+      "default": "unsure",
+      "unit": "category",
+      "required": true,
+      "help": {
+        "es": "Si has notado cambios de memoria/atención en ~6 meses. Se anota, pero no manipula el score.",
+        "en": "Whether you have noticed memory/attention changes over about 6 months. It is noted but does not manipulate the score.",
+        "pt": "Se você notou mudanças de memória/atenção em cerca de 6 meses. É anotado, mas não altera o score."
+      },
+      "where_to_find": {
+        "es": "Tu propia experiencia o comentarios de alguien cercano.",
+        "en": "Your own experience or feedback from someone close to you.",
+        "pt": "Sua própria experiência ou comentários de alguém próximo."
+      }
+    },
+    "sessions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 104,
+      "required": true,
+      "unit": "session records",
+      "help": {
+        "es": "Resultados que la app genera automáticamente al terminar las micropruebas.",
+        "en": "Results automatically generated by the app after the microtasks.",
+        "pt": "Resultados gerados automaticamente pelo app após as microtarefas."
+      },
+      "where_to_find": {
+        "es": "No los introduces manualmente; la app los calcula.",
+        "en": "You do not enter these manually; the app calculates them.",
+        "pt": "Você não insere manualmente; o app calcula."
+      },
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "date",
+          "memory_dprime",
+          "attention_rt_ms",
+          "executive_ies_ms",
+          "quality_pass"
+        ],
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "memory_dprime": {
+            "type": "number",
+            "minimum": -6,
+            "maximum": 6,
+            "unit": "d-prime"
+          },
+          "attention_rt_ms": {
+            "type": "number",
+            "minimum": 150,
+            "maximum": 3000,
+            "unit": "ms"
+          },
+          "executive_ies_ms": {
+            "type": "number",
+            "minimum": 150,
+            "maximum": 6000,
+            "unit": "ms"
+          },
+          "quality_pass": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  },
+  "x_cross_validations": [
+    "sessions[].date debe ser única y estrictamente creciente.",
+    "Se requieren al menos 6 sesiones con quality_pass=true para establecer baseline.",
+    "Una sesión posterior al baseline es necesaria para emitir categoría stable/watch/discuss.",
+    "El motor requiere SD>0 en al menos 2 de los 3 dominios del baseline; de lo contrario devuelve baseline_unstable.",
+    "No convertir unidades: todos los tiempos entran en milisegundos. La UI puede mostrar segundos, pero debe convertir a ms antes del motor.",
+    "country_code controla localización/precio, no el score; language/education tampoco modifican la cifra v1."
+  ],
+  "x_unit_conversion": {
+    "metric_imperial": "No aplica a medidas antropométricas. RT debe normalizarse a milisegundos: seconds * 1000 = ms."
+  }
+}

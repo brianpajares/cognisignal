@@ -1,0 +1,6 @@
+country_code,country,year,ppp_lcu_per_intl_dollar,indicator,source_url,license,estado
+US,United States,2025,1.0,PA.NUS.PPP,https://data.worldbank.org/indicator/PA.NUS.PPP,CC BY-4.0,verificado
+GB,United Kingdom,2025,0.68,PA.NUS.PPP,https://data.worldbank.org/indicator/PA.NUS.PPP,CC BY-4.0,verificado
+ES,Spain,2025,0.57,PA.NUS.PPP,https://data.worldbank.org/indicator/PA.NUS.PPP,CC BY-4.0,verificado
+BR,Brazil,2025,2.55,PA.NUS.PPP,https://data.worldbank.org/indicator/PA.NUS.PPP,CC BY-4.0,verificado
+MX,Mexico,2025,10.33,PA.NUS.PPP,https://data.worldbank.org/indicator/PA.NUS.PPP,CC BY-4.0,verificado

@@ -1,0 +1,21 @@
+id,dato,url,licencia,fecha,estado
+F01,"Parámetros EWMA (λ habitual 0,2–0,3; límites k=2 o 3)",https://www.itl.nist.gov/div898/handbook/mpc/section2/mpc2211.htm,Información pública NIST; reutilización conforme a política NIST,2026-10-13,verificado
+F02,Política de reutilización/copyright de NIST,https://www.nist.gov/copyrights-disclaimers,Información pública del Gobierno de EE. UU. salvo indicación específica,2026-10-13,verificado
+F03,"Fórmula Reliable Change Index y umbral |RCI|>1,96",https://pmc.ncbi.nlm.nih.gov/articles/PMC8581253/,Referencia metodológica de acceso público; no se redistribuye contenido,2026-10-13,verificado
+F04,"Corrección loglineal d′: +0,5 a hits/FA y +1 a totales",https://pmc.ncbi.nlm.nih.gov/articles/PMC3434682/,Referencia metodológica de acceso público; no se redistribuye contenido,2026-10-13,verificado
+F05,Inverse Efficiency Score: RT correcto medio / proporción correcta,https://pmc.ncbi.nlm.nih.gov/articles/PMC11493209/,Referencia metodológica de acceso público; no se redistribuye contenido,2026-10-13,verificado
+F06,Revisión de evaluación cognitiva remota en adultos mayores,https://pmc.ncbi.nlm.nih.gov/articles/PMC10487375/,Referencia bibliográfica; no se redistribuyen instrumentos/datos,2026-10-13,verificado
+F07,Brain on Track: evidencia benchmark de evaluación cognitiva web,https://pmc.ncbi.nlm.nih.gov/articles/PMC4705487/,Referencia bibliográfica; no se redistribuyen instrumentos/datos,2026-10-13,verificado
+F08,OCTAL: benchmark de prueba digital breve; licencia comercial separada,https://pmc.ncbi.nlm.nih.gov/articles/PMC12909784/,Artículo de acceso público; plataforma no incorporada al producto,2026-10-13,verificado
+F09,OCTAL portal: licencia académica y contacto para uso comercial,https://octalportal.com/about/,No apta como dependencia comercial sin acuerdo; candidato descartado,2026-10-13,verificado
+F10,"jsPsych, framework web para tareas conductuales",https://github.com/jspsych/jsPsych,MIT,2026-10-13,verificado
+F11,"statsmodels, candidato de modelos mixtos",https://www.statsmodels.org/,BSD-3-Clause,2026-10-13,verificado
+F12,"XGBoost, candidato ML futuro",https://github.com/dmlc/xgboost,Apache-2.0,2026-10-13,verificado
+F13,"TestMyBrain, código de referencia y estímulos",https://github.com/manybrainsproject/TestMyBrainCodeRepo,LGPL-3.0 para código; CC-BY-SA-4.0 para estímulos; no incorporado en v1,2026-10-13,verificado
+F14,ADNI Terms of Use: restricciones no comerciales del sitio/materiales,https://adni.loni.usc.edu/terms-of-use/,No apta como fuente redistribuible/comercial sin permiso; candidato descartado,2026-10-13,verificado
+F15,"World Bank PA.NUS.PPP (PPP conversion factor GDP), 2025",https://data.worldbank.org/indicator/PA.NUS.PPP,CC BY-4.0,2026-10-13,verificado
+F16,"Stripe US pricing: 2,9% + US$0,30 para tarjetas domésticas estándar",https://stripe.com/pricing,Página pública de precios; dato factual no redistribuido como base propietaria,2026-10-13,verificado
+F17,"Stripe UK pricing: 1,5% + £0,20 tarjetas UK estándar",https://stripe.com/gb/pricing,Página pública de precios; dato factual,2026-10-13,verificado
+F18,"Stripe ES pricing: 1,5% + €0,25 tarjetas EEA estándar",https://stripe.com/es/pricing,Página pública de precios; dato factual,2026-10-13,verificado
+F19,"Stripe BR pricing: 3,99% + R$0,39 tarjetas domésticas",https://stripe.com/br/pricing,Página pública de precios; dato factual,2026-10-13,verificado
+F20,"Stripe MX pricing: 3,6% + MXN$3 tarjetas domésticas",https://stripe.com/mx/pricing,Página pública de precios; dato factual,2026-10-13,verificado

@@ -1,0 +1,3919 @@
+{
+  "model_version": "CS-LCM-1.0",
+  "generated_at": "2026-10-13",
+  "base_file": "base_cognisignal.xlsx",
+  "expected_outputs_generated_by": "engine_reference.calculate(inputs, base_cognisignal.xlsx)",
+  "published_exact_case_available": false,
+  "published_exact_case_note": "No existe un caso publicado con esta combinación exacta de tareas originales + baseline personal + EWMA; se incluyen benchmarks publicados en Tablas_Evidencia.",
+  "count": 20,
+  "cases": [
+    {
+      "id": "T01",
+      "label": "US típico estable",
+      "inputs": {
+        "age_years": 65,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.38,
+            "attention_rt_ms": 518.0,
+            "executive_ies_ms": 608.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-19",
+            "memory_dprime": 2.32,
+            "attention_rt_ms": 525.0,
+            "executive_ies_ms": 615.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-26",
+            "memory_dprime": 2.25,
+            "attention_rt_ms": 532.0,
+            "executive_ies_ms": 622.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "stable",
+        "message_key": "within_personal_reference_band",
+        "valid_sessions": 9,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 3,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "latest_composite_z": 1.7994038265208856,
+        "ewma": 0.6081503225771403,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 60.81503225771403,
+        "domain_z_latest": {
+          "memory": 1.9069251784911845,
+          "attention": 1.728197519575426,
+          "executive": 1.728197519575426
+        },
+        "monitoring_composite_z_series": [
+          0.5138286481314492,
+          1.1406218144508604,
+          1.7994038265208856
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 67.52506915091296,
+            "delta_signal_points": 6.710036893198925
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 67.52506915091294,
+            "delta_signal_points": 6.710036893198911
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 67.52506915091294,
+            "delta_signal_points": 6.710036893198911
+          }
+        }
+      }
+    },
+    {
+      "id": "T02",
+      "label": "GB típico watch",
+      "inputs": {
+        "age_years": 70,
+        "country_code": "GB",
+        "language": "en",
+        "education_band": "tertiary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.0,
+            "attention_rt_ms": 560.0,
+            "executive_ies_ms": 650.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "watch",
+        "message_key": "change_crossed_warning_limit",
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "latest_composite_z": 4.338565337549145,
+        "ewma": 0.867713067509829,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 86.7713067509829,
+        "domain_z_latest": {
+          "memory": 4.290581651605163,
+          "attention": 4.32049379893857,
+          "executive": 4.32049379893857
+        },
+        "monitoring_composite_z_series": [
+          4.338565337549145
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 93.48134364418182,
+            "delta_signal_points": 6.710036893198918
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 93.48134364418182,
+            "delta_signal_points": 6.710036893198918
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 93.48134364418182,
+            "delta_signal_points": 6.710036893198918
+          }
+        }
+      }
+    },
+    {
+      "id": "T03",
+      "label": "BR típico discutir con clínico",
+      "inputs": {
+        "age_years": 68,
+        "country_code": "BR",
+        "language": "pt",
+        "education_band": "primary_or_less",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.2,
+            "attention_rt_ms": 540.0,
+            "executive_ies_ms": 630.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-19",
+            "memory_dprime": 2.1,
+            "attention_rt_ms": 550.0,
+            "executive_ies_ms": 640.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-26",
+            "memory_dprime": 2.0,
+            "attention_rt_ms": 560.0,
+            "executive_ies_ms": 650.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "discuss_with_clinician",
+        "message_key": "persistent_change_crossed_action_limit",
+        "valid_sessions": 9,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 3,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "latest_composite_z": 4.338565337549145,
+        "ewma": 1.7257151461223672,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 100.0,
+        "domain_z_latest": {
+          "memory": 4.290581651605163,
+          "attention": 4.32049379893857,
+          "executive": 4.32049379893857
+        },
+        "monitoring_composite_z_series": [
+          2.4563310173490707,
+          3.3974481774491077,
+          4.338565337549145
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 100.0,
+            "delta_signal_points": 0.0
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 100.0,
+            "delta_signal_points": 0.0
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 100.0,
+            "delta_signal_points": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "T04",
+      "label": "ES típico mejora",
+      "inputs": {
+        "age_years": 62,
+        "country_code": "ES",
+        "language": "es",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 490.0,
+            "executive_ies_ms": 580.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-19",
+            "memory_dprime": 2.7,
+            "attention_rt_ms": 480.0,
+            "executive_ies_ms": 570.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "stable",
+        "message_key": "within_personal_reference_band",
+        "valid_sessions": 8,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 2,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "latest_composite_z": -2.870483485745004,
+        "ewma": -0.8827953092521956,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 0.0,
+        "domain_z_latest": {
+          "memory": -2.3836564731139784,
+          "attention": -3.086066999241842,
+          "executive": -3.086066999241842
+        },
+        "monitoring_composite_z_series": [
+          -1.9293663256449671,
+          -2.870483485745004
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 0.0,
+            "delta_signal_points": 0.0
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 0.0,
+            "delta_signal_points": 0.0
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 0.0,
+            "delta_signal_points": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "T05",
+      "label": "MX típico watch",
+      "inputs": {
+        "age_years": 74,
+        "country_code": "MX",
+        "language": "es",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.059238792251205,
+            "attention_rt_ms": 553.5761616115736,
+            "executive_ies_ms": 643.5761616115736,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "watch",
+        "message_key": "change_crossed_warning_limit",
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "latest_composite_z": 3.75,
+        "ewma": 0.75,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 75.0,
+        "domain_z_latest": {
+          "memory": 3.725761929169005,
+          "attention": 3.725761929169006,
+          "executive": 3.725761929169006
+        },
+        "monitoring_composite_z_series": [
+          3.75
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 81.71003689319893,
+            "delta_signal_points": 6.710036893198932
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 81.71003689319893,
+            "delta_signal_points": 6.710036893198932
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 81.71003689319893,
+            "delta_signal_points": 6.710036893198932
+          }
+        }
+      }
+    },
+    {
+      "id": "T06",
+      "label": "Edad mínima 55",
+      "inputs": {
+        "age_years": 55,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "stable",
+        "message_key": "within_personal_reference_band",
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "latest_composite_z": 0.19950465435082376,
+        "ewma": 0.039900930870164754,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 3.9900930870164752,
+        "domain_z_latest": {
+          "memory": 0.2860387767736798,
+          "attention": 0.15430334996208842,
+          "executive": 0.15430334996208842
+        },
+        "monitoring_composite_z_series": [
+          0.19950465435082376
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 10.700129980215396,
+            "delta_signal_points": 6.71003689319892
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 10.700129980215396,
+            "delta_signal_points": 6.71003689319892
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 10.700129980215396,
+            "delta_signal_points": 6.71003689319892
+          }
+        }
+      }
+    },
+    {
+      "id": "T07",
+      "label": "Edad máxima 90",
+      "inputs": {
+        "age_years": 90,
+        "country_code": "ES",
+        "language": "es",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.35,
+            "attention_rt_ms": 525.0,
+            "executive_ies_ms": 615.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "stable",
+        "message_key": "within_personal_reference_band",
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "latest_composite_z": 1.0446552771990165,
+        "ewma": 0.2089310554398033,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 20.89310554398033,
+        "domain_z_latest": {
+          "memory": 0.9534625892455922,
+          "attention": 1.08012344973464,
+          "executive": 1.08012344973464
+        },
+        "monitoring_composite_z_series": [
+          1.0446552771990165
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 27.60314243717925,
+            "delta_signal_points": 6.710036893198922
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 27.60314243717925,
+            "delta_signal_points": 6.710036893198922
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 27.60314243717925,
+            "delta_signal_points": 6.710036893198922
+          }
+        }
+      }
+    },
+    {
+      "id": "T08",
+      "label": "Baseline incompleto con 5 sesiones válidas",
+      "inputs": {
+        "age_years": 66,
+        "country_code": "MX",
+        "language": "es",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "baseline_building",
+        "category": "baseline_building",
+        "valid_sessions": 5,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 5,
+        "monitoring_sessions_used": 0,
+        "signal_index_0_100": null,
+        "ewma": null,
+        "latest_composite_z": null,
+        "domain_z_latest": {},
+        "warn_limit": null,
+        "action_limit": null,
+        "message_key": "need_more_baseline_sessions"
+      }
+    },
+    {
+      "id": "T09",
+      "label": "Baseline listo exactamente 6 sesiones",
+      "inputs": {
+        "age_years": 66,
+        "country_code": "GB",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "baseline_ready",
+        "category": "baseline_ready",
+        "valid_sessions": 6,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 0,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "signal_index_0_100": 0.0,
+        "ewma": 0.0,
+        "latest_composite_z": null,
+        "domain_z_latest": {},
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "message_key": "baseline_ready_waiting_followup"
+      }
+    },
+    {
+      "id": "T10",
+      "label": "Una sesión excluida por calidad",
+      "inputs": {
+        "age_years": 67,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": false
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 1,
+        "context_flags": [],
+        "status": "baseline_ready",
+        "category": "baseline_ready",
+        "valid_sessions": 6,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 0,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.433333333333333,
+            "sd": 0.10327955589886455
+          },
+          "attention": {
+            "mean": 514.1666666666666,
+            "sd": 10.684880283216405
+          },
+          "executive": {
+            "mean": 604.1666666666666,
+            "sd": 10.684880283216405
+          }
+        },
+        "composite_baseline_sd": 0.992548985486534,
+        "signal_index_0_100": 0.0,
+        "ewma": 0.0,
+        "latest_composite_z": null,
+        "domain_z_latest": {},
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "message_key": "baseline_ready_waiting_followup"
+      }
+    },
+    {
+      "id": "T11",
+      "label": "Dominio ejecutivo sin variabilidad; quedan 2 dominios",
+      "inputs": {
+        "age_years": 60,
+        "country_code": "BR",
+        "language": "pt",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "stable",
+        "message_key": "within_personal_reference_band",
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9927256198102334,
+        "latest_composite_z": 1.497507127930102,
+        "ewma": 0.2995014255860204,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 29.95014255860204,
+        "domain_z_latest": {
+          "memory": 1.4301938838683905,
+          "attention": 1.5430334996209156
+        },
+        "monitoring_composite_z_series": [
+          1.497507127930102
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 40.02341940413321,
+            "delta_signal_points": 10.073276845531169
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 40.02341940413321,
+            "delta_signal_points": 10.073276845531169
+          }
+        }
+      }
+    },
+    {
+      "id": "T12",
+      "label": "Solo un dominio variable; baseline inestable",
+      "inputs": {
+        "age_years": 61,
+        "country_code": "MX",
+        "language": "es",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 540.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "baseline_unstable",
+        "category": "baseline_unstable",
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "attention"
+        ],
+        "signal_index_0_100": null,
+        "ewma": null,
+        "latest_composite_z": null,
+        "domain_z_latest": {},
+        "warn_limit": null,
+        "action_limit": null,
+        "message_key": "insufficient_baseline_variability"
+      }
+    },
+    {
+      "id": "T13",
+      "label": "Borde justo debajo de warning",
+      "inputs": {
+        "age_years": 64,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.111340286617711,
+            "attention_rt_ms": 548.2104511744749,
+            "executive_ies_ms": 638.2104511744749,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "stable",
+        "message_key": "within_personal_reference_band",
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "latest_composite_z": 3.249999999999997,
+        "ewma": 0.6499999999999995,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 64.99999999999994,
+        "domain_z_latest": {
+          "memory": 3.228993671946472,
+          "attention": 3.228993671946467,
+          "executive": 3.228993671946467
+        },
+        "monitoring_composite_z_series": [
+          3.249999999999997
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 71.71003689319886,
+            "delta_signal_points": 6.710036893198918
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 71.71003689319888,
+            "delta_signal_points": 6.710036893198932
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 71.71003689319888,
+            "delta_signal_points": 6.710036893198932
+          }
+        }
+      }
+    },
+    {
+      "id": "T14",
+      "label": "Borde justo encima de warning",
+      "inputs": {
+        "age_years": 64,
+        "country_code": "GB",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.10091998774441,
+            "attention_rt_ms": 549.2835932618947,
+            "executive_ies_ms": 639.2835932618947,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "watch",
+        "message_key": "change_crossed_warning_limit",
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "latest_composite_z": 3.3500000000000005,
+        "ewma": 0.6700000000000002,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 67.00000000000001,
+        "domain_z_latest": {
+          "memory": 3.3283473233909775,
+          "attention": 3.3283473233909793,
+          "executive": 3.3283473233909793
+        },
+        "monitoring_composite_z_series": [
+          3.3500000000000005
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 73.71003689319893,
+            "delta_signal_points": 6.710036893198918
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 73.71003689319893,
+            "delta_signal_points": 6.710036893198918
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 73.71003689319893,
+            "delta_signal_points": 6.710036893198918
+          }
+        }
+      }
+    },
+    {
+      "id": "T15",
+      "label": "Borde justo debajo de acción",
+      "inputs": {
+        "age_years": 64,
+        "country_code": "ES",
+        "language": "es",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 1.9341952057715908,
+            "attention_rt_ms": 566.4538666606105,
+            "executive_ies_ms": 656.4538666606105,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "watch",
+        "message_key": "change_crossed_warning_limit",
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "latest_composite_z": 4.949999999999999,
+        "ewma": 0.9899999999999999,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 98.99999999999999,
+        "domain_z_latest": {
+          "memory": 4.918005746503087,
+          "attention": 4.918005746503087,
+          "executive": 4.918005746503087
+        },
+        "monitoring_composite_z_series": [
+          4.949999999999999
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 100.0,
+            "delta_signal_points": 1.0000000000000142
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 100.0,
+            "delta_signal_points": 1.0000000000000142
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 100.0,
+            "delta_signal_points": 1.0000000000000142
+          }
+        }
+      }
+    },
+    {
+      "id": "T16",
+      "label": "Borde justo encima de acción",
+      "inputs": {
+        "age_years": 64,
+        "country_code": "BR",
+        "language": "pt",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 1.9237749068982897,
+            "attention_rt_ms": 567.5270087480303,
+            "executive_ies_ms": 657.5270087480303,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "discuss_with_clinician",
+        "message_key": "persistent_change_crossed_action_limit",
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "latest_composite_z": 5.050000000000003,
+        "ewma": 1.0100000000000007,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 100.0,
+        "domain_z_latest": {
+          "memory": 5.017359397947593,
+          "attention": 5.017359397947599,
+          "executive": 5.017359397947599
+        },
+        "monitoring_composite_z_series": [
+          5.050000000000003
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 100.0,
+            "delta_signal_points": 0.0
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 100.0,
+            "delta_signal_points": 0.0
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 100.0,
+            "delta_signal_points": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "T17",
+      "label": "Contexto poor_sleep y autorreporte sí",
+      "inputs": {
+        "age_years": 72,
+        "country_code": "MX",
+        "language": "es",
+        "education_band": "secondary",
+        "context_issue": "poor_sleep",
+        "self_report_change_6m": "yes",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 518.0,
+            "executive_ies_ms": 608.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [
+          "context_issue:poor_sleep",
+          "self_report_change_6m:yes"
+        ],
+        "status": "scored",
+        "category": "stable",
+        "message_key": "within_personal_reference_band",
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "latest_composite_z": 0.4498509566302203,
+        "ewma": 0.08997019132604406,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 8.997019132604406,
+        "domain_z_latest": {
+          "memory": 0.47673129462279823,
+          "attention": 0.43204937989385384,
+          "executive": 0.43204937989385384
+        },
+        "monitoring_composite_z_series": [
+          0.4498509566302203
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 15.707056025803324,
+            "delta_signal_points": 6.710036893198918
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 15.707056025803324,
+            "delta_signal_points": 6.710036893198918
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 15.707056025803324,
+            "delta_signal_points": 6.710036893198918
+          }
+        }
+      }
+    },
+    {
+      "id": "T18",
+      "label": "Límites inferiores de métricas dentro del esquema",
+      "inputs": {
+        "age_years": 58,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": -6.0,
+            "attention_rt_ms": 150.0,
+            "executive_ies_ms": 150.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": -5.8,
+            "attention_rt_ms": 170.0,
+            "executive_ies_ms": 180.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": -5.9,
+            "attention_rt_ms": 160.0,
+            "executive_ies_ms": 170.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": -5.7,
+            "attention_rt_ms": 180.0,
+            "executive_ies_ms": 190.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": -5.85,
+            "attention_rt_ms": 155.0,
+            "executive_ies_ms": 160.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": -5.75,
+            "attention_rt_ms": 165.0,
+            "executive_ies_ms": 175.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": -5.8,
+            "attention_rt_ms": 160.0,
+            "executive_ies_ms": 170.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "stable",
+        "message_key": "within_personal_reference_band",
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": -5.833333333333333,
+            "sd": 0.10801234497346433
+          },
+          "attention": {
+            "mean": 163.33333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 170.83333333333334,
+            "sd": 14.288690166235206
+          }
+        },
+        "composite_baseline_sd": 0.3945961631369136,
+        "latest_composite_z": -0.5706548004505536,
+        "ewma": -0.11413096009011073,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 0.0,
+        "domain_z_latest": {
+          "memory": -0.3086066999241827,
+          "attention": -0.3086066999241847,
+          "executive": -0.058321184351981095
+        },
+        "monitoring_composite_z_series": [
+          -0.5706548004505536
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 5.481814001438076,
+            "delta_signal_points": 5.481814001438076
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 5.481814001438076,
+            "delta_signal_points": 5.481814001438076
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 5.481814001438078,
+            "delta_signal_points": 5.481814001438078
+          }
+        }
+      }
+    },
+    {
+      "id": "T19",
+      "label": "Límites superiores de métricas dentro del esquema",
+      "inputs": {
+        "age_years": 89,
+        "country_code": "GB",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 6.0,
+            "attention_rt_ms": 3000.0,
+            "executive_ies_ms": 6000.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 5.8,
+            "attention_rt_ms": 2950.0,
+            "executive_ies_ms": 5900.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 5.9,
+            "attention_rt_ms": 2980.0,
+            "executive_ies_ms": 5950.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 5.7,
+            "attention_rt_ms": 2920.0,
+            "executive_ies_ms": 5850.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 5.85,
+            "attention_rt_ms": 2960.0,
+            "executive_ies_ms": 5925.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 5.75,
+            "attention_rt_ms": 2940.0,
+            "executive_ies_ms": 5880.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 5.8,
+            "attention_rt_ms": 2970.0,
+            "executive_ies_ms": 5940.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "stable",
+        "message_key": "within_personal_reference_band",
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 5.833333333333333,
+            "sd": 0.10801234497346433
+          },
+          "attention": {
+            "mean": 2958.3333333333335,
+            "sd": 28.577380332470412
+          },
+          "executive": {
+            "mean": 5917.5,
+            "sd": 53.26818938165629
+          }
+        },
+        "composite_baseline_sd": 0.33411582000308554,
+        "latest_composite_z": 1.136577848359149,
+        "ewma": 0.22731556967182984,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 22.731556967182982,
+        "domain_z_latest": {
+          "memory": 0.3086066999241827,
+          "attention": 0.4082482904638577,
+          "executive": 0.4223909290175389
+        },
+        "monitoring_composite_z_series": [
+          1.136577848359149
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 42.684717720256884,
+            "delta_signal_points": 19.953160753073902
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 42.684717720256884,
+            "delta_signal_points": 19.953160753073902
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 42.684717720256884,
+            "delta_signal_points": 19.953160753073902
+          }
+        }
+      }
+    },
+    {
+      "id": "T20",
+      "label": "Persistencia moderada en tres seguimientos",
+      "inputs": {
+        "age_years": 69,
+        "country_code": "ES",
+        "language": "es",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.2155432753507234,
+            "attention_rt_ms": 537.4790303002775,
+            "executive_ies_ms": 627.4790303002775,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-19",
+            "memory_dprime": 2.2155432753507234,
+            "attention_rt_ms": 537.4790303002775,
+            "executive_ies_ms": 627.4790303002775,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-26",
+            "memory_dprime": 2.2155432753507234,
+            "attention_rt_ms": 537.4790303002775,
+            "executive_ies_ms": 627.4790303002775,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "status": "scored",
+        "category": "discuss_with_clinician",
+        "message_key": "persistent_change_crossed_action_limit",
+        "valid_sessions": 9,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 3,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.45,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "latest_composite_z": 2.249999999999997,
+        "ewma": 1.0979999999999985,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 100.0,
+        "domain_z_latest": {
+          "memory": 2.2354571575014015,
+          "attention": 2.2354571575013993,
+          "executive": 2.2354571575013993
+        },
+        "monitoring_composite_z_series": [
+          2.249999999999997,
+          2.249999999999997,
+          2.249999999999997
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 100.0,
+            "delta_signal_points": 0.0
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 100.0,
+            "delta_signal_points": 0.0
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 100.0,
+            "delta_signal_points": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "robustness_cases": [
+    {
+      "id": "T21",
+      "label": "Seis sesiones excluidas por calidad; baseline no suficiente",
+      "type": "robustness_valid",
+      "inputs": {
+        "age_years": 65,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": false
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": false
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": false
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": false
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": false
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": false
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 6,
+        "context_flags": [],
+        "valid_sessions": 1,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 1,
+        "monitoring_sessions_used": 0,
+        "status": "baseline_building",
+        "category": "baseline_building",
+        "signal_index_0_100": null,
+        "ewma": null,
+        "latest_composite_z": null,
+        "domain_z_latest": {},
+        "warn_limit": null,
+        "action_limit": null,
+        "message_key": "need_more_baseline_sessions"
+      }
+    },
+    {
+      "id": "T22",
+      "label": "Error de unidad: segundos introducidos como ms",
+      "type": "robustness_rejection",
+      "inputs": {
+        "age_years": 65,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 0.52,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected_error": "ModelInputError"
+    },
+    {
+      "id": "T23",
+      "label": "NaN rechazado",
+      "type": "robustness_runtime_nonfinite",
+      "input_template": {
+        "age_years": 65,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "mutation": {
+        "session_index": 0,
+        "field": "memory_dprime",
+        "runtime_value": "NaN"
+      },
+      "expected_error": "ModelInputError",
+      "note": "JSON estándar no representa NaN/Infinity; el harness materializa el valor IEEE-754 en runtime."
+    },
+    {
+      "id": "T24",
+      "label": "Infinito rechazado",
+      "type": "robustness_runtime_nonfinite",
+      "input_template": {
+        "age_years": 65,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "mutation": {
+        "session_index": 0,
+        "field": "executive_ies_ms",
+        "runtime_value": "Infinity"
+      },
+      "expected_error": "ModelInputError",
+      "note": "JSON estándar no representa NaN/Infinity; el harness materializa el valor IEEE-754 en runtime."
+    },
+    {
+      "id": "T25",
+      "label": "Fechas duplicadas rechazadas",
+      "type": "robustness_rejection",
+      "inputs": {
+        "age_years": 65,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected_error": "ModelInputError"
+    },
+    {
+      "id": "T26",
+      "label": "Fecha calendario imposible rechazada",
+      "type": "robustness_rejection",
+      "inputs": {
+        "age_years": 65,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-02-30",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected_error": "ModelInputError"
+    },
+    {
+      "id": "T27",
+      "label": "Más de 104 sesiones rechazadas",
+      "type": "robustness_rejection",
+      "inputs": {
+        "age_years": 65,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2025-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-02",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-03",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-04",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-05",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-06",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-07",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-08",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-09",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-10",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-11",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-12",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-13",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-14",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-15",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-16",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-17",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-18",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-19",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-20",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-21",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-22",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-23",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-24",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-25",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-26",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-27",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-28",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-29",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-30",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-01-31",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-01",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-02",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-03",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-04",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-05",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-06",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-07",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-08",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-09",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-10",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-11",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-12",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-13",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-14",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-15",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-16",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-17",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-18",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-19",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-20",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-21",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-22",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-23",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-24",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-25",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-26",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-27",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-02-28",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-01",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-02",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-03",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-04",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-05",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-06",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-07",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-08",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-09",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-10",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-11",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-12",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-13",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-14",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-15",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-16",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-17",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-18",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-19",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-20",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-21",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-22",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-23",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-24",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-25",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-26",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-27",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-28",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-30",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-03-31",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-02",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-03",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-04",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-05",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-06",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-07",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-08",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-09",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-10",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-11",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-12",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-13",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520,
+            "executive_ies_ms": 610,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-14",
+            "memory_dprime": 2.4099999999999997,
+            "attention_rt_ms": 521,
+            "executive_ies_ms": 611,
+            "quality_pass": true
+          },
+          {
+            "date": "2025-04-15",
+            "memory_dprime": 2.42,
+            "attention_rt_ms": 522,
+            "executive_ies_ms": 612,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected_error": "ModelInputError"
+    },
+    {
+      "id": "T28",
+      "label": "Campos extra de sesión rechazados",
+      "type": "robustness_rejection",
+      "inputs": {
+        "age_years": 65,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true,
+            "unexpected": 1
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected_error": "ModelInputError"
+    },
+    {
+      "id": "T29",
+      "label": "Monotonicidad: deterioro moderado",
+      "type": "robustness_valid",
+      "inputs": {
+        "age_years": 65,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.35,
+            "attention_rt_ms": 522.0,
+            "executive_ies_ms": 612.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.4499999999999997,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "status": "scored",
+        "category": "stable",
+        "message_key": "within_personal_reference_band",
+        "latest_composite_z": 0.8582866664208475,
+        "ewma": 0.17165733328416952,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 17.16573332841695,
+        "domain_z_latest": {
+          "memory": 0.953462589245588,
+          "attention": 0.8023774198028745,
+          "executive": 0.8023774198028745
+        },
+        "monitoring_composite_z_series": [
+          0.8582866664208475
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 23.875770221615866,
+            "delta_signal_points": 6.7100368931989145
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 23.875770221615866,
+            "delta_signal_points": 6.7100368931989145
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 23.875770221615866,
+            "delta_signal_points": 6.7100368931989145
+          }
+        }
+      }
+    },
+    {
+      "id": "T30",
+      "label": "Monotonicidad: deterioro mayor",
+      "type": "robustness_valid",
+      "inputs": {
+        "age_years": 65,
+        "country_code": "US",
+        "language": "en",
+        "education_band": "secondary",
+        "context_issue": "none",
+        "self_report_change_6m": "no",
+        "sessions": [
+          {
+            "date": "2026-01-01",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 520.0,
+            "executive_ies_ms": 610.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-08",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 510.0,
+            "executive_ies_ms": 600.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-15",
+            "memory_dprime": 2.3,
+            "attention_rt_ms": 530.0,
+            "executive_ies_ms": 620.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-22",
+            "memory_dprime": 2.6,
+            "attention_rt_ms": 500.0,
+            "executive_ies_ms": 590.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-01-29",
+            "memory_dprime": 2.4,
+            "attention_rt_ms": 515.0,
+            "executive_ies_ms": 605.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-05",
+            "memory_dprime": 2.5,
+            "attention_rt_ms": 505.0,
+            "executive_ies_ms": 595.0,
+            "quality_pass": true
+          },
+          {
+            "date": "2026-02-12",
+            "memory_dprime": 2.2,
+            "attention_rt_ms": 540.0,
+            "executive_ies_ms": 630.0,
+            "quality_pass": true
+          }
+        ]
+      },
+      "expected": {
+        "model_version": "CS-LCM-1.0",
+        "is_clinical_probability": false,
+        "clinical_probability": null,
+        "quality_excluded_sessions": 0,
+        "context_flags": [],
+        "valid_sessions": 7,
+        "baseline_sessions_required": 6,
+        "baseline_sessions_used": 6,
+        "monitoring_sessions_used": 1,
+        "valid_domains": [
+          "memory",
+          "attention",
+          "executive"
+        ],
+        "baseline_domain_stats": {
+          "memory": {
+            "mean": 2.4499999999999997,
+            "sd": 0.10488088481701525
+          },
+          "attention": {
+            "mean": 513.3333333333334,
+            "sd": 10.801234497346433
+          },
+          "executive": {
+            "mean": 603.3333333333334,
+            "sd": 10.801234497346433
+          }
+        },
+        "composite_baseline_sd": 0.9935365144450682,
+        "status": "scored",
+        "category": "stable",
+        "message_key": "within_personal_reference_band",
+        "latest_composite_z": 2.4563310173490693,
+        "ewma": 0.49126620346981387,
+        "ewma_sigma_reference": 0.33333333333333337,
+        "warn_limit": 0.6666666666666667,
+        "action_limit": 1.0,
+        "signal_index_0_100": 49.12662034698138,
+        "domain_z_latest": {
+          "memory": 2.3836564731139744,
+          "attention": 2.468853599393467,
+          "executive": 2.468853599393467
+        },
+        "monitoring_composite_z_series": [
+          2.4563310173490693
+        ],
+        "sensitivity": {
+          "memory": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 55.83665724018031,
+            "delta_signal_points": 6.710036893198925
+          },
+          "attention": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 55.83665724018031,
+            "delta_signal_points": 6.710036893198925
+          },
+          "executive": {
+            "scenario": "+1_baseline_sd_worse_on_latest_session",
+            "signal_index_0_100": 55.83665724018031,
+            "delta_signal_points": 6.710036893198925
+          }
+        }
+      }
+    }
+  ],
+  "qa_stage3_note": "T21-T30 añadidos por QA; T23/T24 usan mutación runtime por restricción JSON sobre no-finitos.",
+  "qa_note": "20 vectores de regresión ejecutables. Los 10 casos T21-T30 son checks de robustez documentados en docs/qa_report.md y ACCEPTANCE_TESTS.md, no entradas serializadas en este archivo."
+}

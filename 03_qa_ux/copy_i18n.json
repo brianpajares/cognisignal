@@ -1,0 +1,203 @@
+{
+  "brand": {
+    "name": {
+      "es": "CogniSignal",
+      "en": "CogniSignal",
+      "pt": "CogniSignal"
+    },
+    "tagline": {
+      "es": "Observa cambios. Decide con contexto.",
+      "en": "See change. Decide with context.",
+      "pt": "Veja mudanças. Decida com contexto."
+    },
+    "promise": {
+      "es": "Una señal longitudinal basada en tu propio baseline, no en compararte con otras personas.",
+      "en": "A longitudinal signal based on your own baseline, not on comparisons with other people.",
+      "pt": "Um sinal longitudinal baseado no seu próprio baseline, não em comparações com outras pessoas."
+    }
+  },
+  "landing": {
+    "eyebrow": {
+      "es": "Seguimiento cognitivo personal",
+      "en": "Personal cognitive tracking",
+      "pt": "Acompanhamento cognitivo pessoal"
+    },
+    "headline": {
+      "es": "Detecta cambios en tu rendimiento antes de que una impresión aislada te confunda.",
+      "en": "Spot changes in your performance before a single impression misleads you.",
+      "pt": "Perceba mudanças no seu desempenho antes que uma impressão isolada confunda você."
+    },
+    "subhead": {
+      "es": "Micropruebas breves + baseline personal + tendencia estadística. No diagnostica enfermedades.",
+      "en": "Brief microtasks + personal baseline + statistical trend. It does not diagnose disease.",
+      "pt": "Microtarefas breves + baseline pessoal + tendência estatística. Não diagnostica doenças."
+    },
+    "cta": {
+      "es": "Empezar seguimiento",
+      "en": "Start tracking",
+      "pt": "Começar acompanhamento"
+    },
+    "trust": {
+      "es": "Sin diagnóstico · Sin datos pasivos · Metodología visible",
+      "en": "No diagnosis · No passive data · Visible methodology",
+      "pt": "Sem diagnóstico · Sem dados passivos · Metodologia visível"
+    }
+  },
+  "steps": {
+    "age_q": {
+      "es": "¿Cuál es tu edad?",
+      "en": "How old are you?",
+      "pt": "Qual é a sua idade?"
+    },
+    "country_q": {
+      "es": "¿Dónde resides?",
+      "en": "Where do you live?",
+      "pt": "Onde você mora?"
+    },
+    "context_q": {
+      "es": "¿Hay algo inusual hoy que pueda afectar tu rendimiento?",
+      "en": "Is anything unusual today that could affect your performance?",
+      "pt": "Há algo incomum hoje que possa afetar seu desempenho?"
+    },
+    "continue": {
+      "es": "Continuar",
+      "en": "Continue",
+      "pt": "Continuar"
+    },
+    "back": {
+      "es": "Atrás",
+      "en": "Back",
+      "pt": "Voltar"
+    },
+    "progress": {
+      "es": "Paso {current} de {total}",
+      "en": "Step {current} of {total}",
+      "pt": "Etapa {current} de {total}"
+    }
+  },
+  "processing": {
+    "title": {
+      "es": "Calculando tu señal longitudinal",
+      "en": "Calculating your longitudinal signal",
+      "pt": "Calculando seu sinal longitudinal"
+    },
+    "body": {
+      "es": "Comparamos esta sesión solo con tu baseline personal y aplicamos el mismo motor determinista cada vez.",
+      "en": "We compare this session only with your personal baseline and apply the same deterministic engine every time.",
+      "pt": "Comparamos esta sessão apenas com seu baseline pessoal e aplicamos o mesmo motor determinístico sempre."
+    }
+  },
+  "preview": {
+    "title": {
+      "es": "Tu señal de cambio",
+      "en": "Your change signal",
+      "pt": "Seu sinal de mudança"
+    },
+    "stable": {
+      "es": "Dentro de tu banda personal",
+      "en": "Within your personal band",
+      "pt": "Dentro da sua faixa pessoal"
+    },
+    "watch": {
+      "es": "Conviene repetir y revisar contexto",
+      "en": "Worth repeating and reviewing context",
+      "pt": "Vale repetir e revisar o contexto"
+    },
+    "discuss": {
+      "es": "Cambio persistente: considera comentarlo con un profesional",
+      "en": "Persistent change: consider discussing it with a clinician",
+      "pt": "Mudança persistente: considere conversar com um profissional"
+    },
+    "index_label": {
+      "es": "Índice de cambio",
+      "en": "Change Index",
+      "pt": "Índice de mudança"
+    },
+    "locked_title": {
+      "es": "Qué está impulsando la señal",
+      "en": "What is driving the signal",
+      "pt": "O que está impulsionando o sinal"
+    },
+    "locked_body": {
+      "es": "El informe completo muestra memoria, atención, función ejecutiva, sensibilidad y próximos pasos.",
+      "en": "The full report shows memory, attention, executive function, sensitivity and next steps.",
+      "pt": "O relatório completo mostra memória, atenção, função executiva, sensibilidade e próximos passos."
+    },
+    "cta": {
+      "es": "Recibir mi informe completo",
+      "en": "Get my full report",
+      "pt": "Receber meu relatório completo"
+    },
+    "disclaimer": {
+      "es": "Esto no es un diagnóstico ni una probabilidad de Alzheimer, demencia o MCI.",
+      "en": "This is not a diagnosis or a probability of Alzheimer’s, dementia or MCI.",
+      "pt": "Isto não é um diagnóstico nem uma probabilidade de Alzheimer, demência ou CCL."
+    }
+  },
+  "gate": {
+    "title": {
+      "es": "Envía el informe a tu correo",
+      "en": "Send the report to your email",
+      "pt": "Envie o relatório para seu e-mail"
+    },
+    "benefit": {
+      "es": "Recibirás el desglose por dominio, sensibilidad del resultado, metodología y un plan de seguimiento.",
+      "en": "You’ll receive the domain breakdown, result sensitivity, methodology and a follow-up plan.",
+      "pt": "Você receberá o detalhamento por domínio, sensibilidade do resultado, metodologia e um plano de acompanhamento."
+    },
+    "email": {
+      "es": "Correo electrónico",
+      "en": "Email address",
+      "pt": "E-mail"
+    },
+    "consent": {
+      "es": "Acepto recibir este informe y entiendo que no sustituye una evaluación clínica.",
+      "en": "I agree to receive this report and understand it does not replace a clinical evaluation.",
+      "pt": "Concordo em receber este relatório e entendo que ele não substitui uma avaliação clínica."
+    },
+    "cta": {
+      "es": "Enviar informe",
+      "en": "Send report",
+      "pt": "Enviar relatório"
+    }
+  },
+  "success": {
+    "title": {
+      "es": "Informe solicitado",
+      "en": "Report requested",
+      "pt": "Relatório solicitado"
+    },
+    "body": {
+      "es": "Te mostramos también una copia aquí para que puedas revisarla sin depender del correo.",
+      "en": "We also show a copy here so you can review it without relying on email.",
+      "pt": "Também mostramos uma cópia aqui para você revisar sem depender do e-mail."
+    },
+    "cta": {
+      "es": "Ver informe",
+      "en": "View report",
+      "pt": "Ver relatório"
+    }
+  },
+  "errors": {
+    "required": {
+      "es": "Este dato es necesario para continuar.",
+      "en": "This information is required to continue.",
+      "pt": "Esta informação é necessária para continuar."
+    },
+    "age": {
+      "es": "Introduce una edad entre 55 y 90 años.",
+      "en": "Enter an age between 55 and 90.",
+      "pt": "Informe uma idade entre 55 e 90 anos."
+    },
+    "email": {
+      "es": "Introduce un correo válido.",
+      "en": "Enter a valid email address.",
+      "pt": "Informe um e-mail válido."
+    },
+    "generic": {
+      "es": "No pudimos completar este paso. Tus datos siguen guardados en este dispositivo.",
+      "en": "We couldn’t complete this step. Your data is still saved on this device.",
+      "pt": "Não foi possível concluir esta etapa. Seus dados continuam salvos neste dispositivo."
+    }
+  }
+}

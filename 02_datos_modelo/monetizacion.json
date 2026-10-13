@@ -1,0 +1,145 @@
+{
+  "app": "CogniSignal",
+  "version": "2.0",
+  "date": "2026-10-13",
+  "phase_1_validation": {
+    "offer": "Formulario 'Recibe tu informe completo' después de la vista previa; email + consentimiento explícito. Sin cobro.",
+    "owner_copy": "El dueño recibe una copia con inputs estructurados, outputs y PDF/HTML; nunca incluir más datos personales que los necesarios y usar IDs pseudónimos.",
+    "metrics": [
+      {
+        "metric": "visit_to_start",
+        "threshold": ">=35%",
+        "source": "brief etapa 1"
+      },
+      {
+        "metric": "start_to_preview",
+        "threshold": ">=70%",
+        "source": "brief etapa 1"
+      },
+      {
+        "metric": "preview_to_report_request",
+        "threshold": ">=35%",
+        "source": "brief etapa 1"
+      },
+      {
+        "metric": "repeat_session_within_30d",
+        "threshold": ">=25%",
+        "source": "decision etapa 2; validar"
+      },
+      {
+        "metric": "completed_previews_before_charging",
+        "threshold": ">=200",
+        "source": "decision etapa 2; reduce ruido inicial"
+      }
+    ],
+    "activate_charge_when": ">=200 previews, preview→report >=35% y al menos 25% completa una repetición en 30 días durante una ventana estable de 4 semanas. Si falla, iterar producto antes de cobrar.",
+    "consent_copy_required": true
+  },
+  "phase_2_charge": {
+    "pricing_basis": "Ancla US$39 multiplicada por factor PPP GDP 2025 del World Bank, seguida de redondeo comercial y coherencia con la hipótesis de etapa 1. PPP es referencia de poder adquisitivo relativo, no tipo de cambio.",
+    "world_bank_source": "https://data.worldbank.org/indicator/PA.NUS.PPP",
+    "world_bank_license": "CC BY-4.0",
+    "prices": [
+      {
+        "country": "United States",
+        "code": "US",
+        "currency": "USD",
+        "ppp_factor_2025": 1.0,
+        "single": 39.0,
+        "bundle": 89.0,
+        "stripe_pct": 0.029,
+        "stripe_fixed": 0.3,
+        "source_stripe": "https://stripe.com/pricing",
+        "ppp_anchor_from_usd39": 39.0,
+        "payment_fee_single": 1.43,
+        "contribution_margin_before_infra_pct": 96.33
+      },
+      {
+        "country": "United Kingdom",
+        "code": "GB",
+        "currency": "GBP",
+        "ppp_factor_2025": 0.68,
+        "single": 29.0,
+        "bundle": 69.0,
+        "stripe_pct": 0.015,
+        "stripe_fixed": 0.2,
+        "source_stripe": "https://stripe.com/gb/pricing",
+        "ppp_anchor_from_usd39": 26.52,
+        "payment_fee_single": 0.64,
+        "contribution_margin_before_infra_pct": 97.81
+      },
+      {
+        "country": "Spain",
+        "code": "ES",
+        "currency": "EUR",
+        "ppp_factor_2025": 0.57,
+        "single": 24.99,
+        "bundle": 59.0,
+        "stripe_pct": 0.015,
+        "stripe_fixed": 0.25,
+        "source_stripe": "https://stripe.com/es/pricing",
+        "ppp_anchor_from_usd39": 22.23,
+        "payment_fee_single": 0.62,
+        "contribution_margin_before_infra_pct": 97.5
+      },
+      {
+        "country": "Brazil",
+        "code": "BR",
+        "currency": "BRL",
+        "ppp_factor_2025": 2.55,
+        "single": 99.0,
+        "bundle": 229.0,
+        "stripe_pct": 0.0399,
+        "stripe_fixed": 0.39,
+        "source_stripe": "https://stripe.com/br/pricing",
+        "ppp_anchor_from_usd39": 99.45,
+        "payment_fee_single": 4.34,
+        "contribution_margin_before_infra_pct": 95.62
+      },
+      {
+        "country": "Mexico",
+        "code": "MX",
+        "currency": "MXN",
+        "ppp_factor_2025": 10.33,
+        "single": 399.0,
+        "bundle": 899.0,
+        "stripe_pct": 0.036,
+        "stripe_fixed": 3.0,
+        "source_stripe": "https://stripe.com/mx/pricing",
+        "ppp_anchor_from_usd39": 402.87,
+        "payment_fee_single": 17.36,
+        "contribution_margin_before_infra_pct": 95.65
+      }
+    ],
+    "bundles": "3 informes/90 días; no implica diagnóstico ni revisión clínica.",
+    "upsells": [
+      {
+        "name": "family_2_profiles",
+        "pricing": "A/B test; no fijado en etapa 2"
+      },
+      {
+        "name": "bilingual_report",
+        "pricing": "A/B test; no fijado en etapa 2"
+      },
+      {
+        "name": "6_month_tracking",
+        "pricing": "Activar solo tras señal de recurrencia"
+      }
+    ],
+    "subscription": {
+      "status": "conditional",
+      "activation_threshold": "Activar solo si >=25% de compradores completa 3 o más sesiones de seguimiento en 90 días y >=15% solicita alertas/seguimiento recurrente.",
+      "price": "No fijado hasta medir recurrencia y churn potencial."
+    },
+    "affiliates": "No activar en MVP de salud cognitiva salvo revisión legal y conflicto de interés; ninguna recomendación clínica debe monetizarse por afiliación."
+  },
+  "cost_and_margin": {
+    "model_inference_cost": "US$0 de API/modelo externo; cálculo local determinista.",
+    "known_variable_cost": "Comisión de pago doméstico estándar de Stripe por país, calculada en prices[].payment_fee_single.",
+    "known_contribution_margin": "prices[].contribution_margin_before_infra_pct",
+    "important_exclusion": "Hosting, email transaccional, almacenamiento, impuestos, reembolsos y soporte no se cuantifican hasta elegir proveedores. Por tanto la cifra mostrada es margen de contribución ANTES de infraestructura, no margen bruto contable final.",
+    "status": "partial_cost_estimate",
+    "estimated_cost_per_report": "Costo variable cuantificado = comisión Stripe de cada país + US$0 de inferencia externa. Infraestructura/email/storage/tax/support quedan preliminares hasta elegir proveedor; no se inventa un total."
+  },
+  "do_not_give_away": "No regalar desglose completo por dominio, sensibilidad, escenarios y plan de seguimiento; esos elementos explican el 'por qué' y 'qué hago ahora', que es el núcleo del deseo de compra. La vista previa sí debe ser suficientemente útil para generar confianza."
+}

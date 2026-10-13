@@ -1,0 +1,204 @@
+{
+  "app": "CogniSignal",
+  "model_version": "CS-LCM-1.0",
+  "date": "2026-10-13",
+  "principle": "La capa de acceso cambia cuánto análisis se muestra, nunca cambia el cálculo subyacente.",
+  "outputs": [
+    {
+      "id": "signal_index",
+      "label": {
+        "es": "Índice de cambio",
+        "en": "Change Index",
+        "pt": "Índice de mudança"
+      },
+      "origin": "100*EWMA/action_limit clipped 0-100",
+      "unit": "0-100",
+      "format": "integer",
+      "access": "GRATIS",
+      "notes": "0 no significa ausencia de enfermedad; 100 significa cruce del límite estadístico de acción del motor."
+    },
+    {
+      "id": "category",
+      "label": {
+        "es": "Señal",
+        "en": "Signal",
+        "pt": "Sinal"
+      },
+      "origin": "EWMA vs 2σ/3σ limits",
+      "unit": "category",
+      "format": "Stable / Watch / Discuss with a clinician",
+      "access": "GRATIS"
+    },
+    {
+      "id": "trend_chart",
+      "label": {
+        "es": "Tu tendencia",
+        "en": "Your trend",
+        "pt": "Sua tendência"
+      },
+      "origin": "monitoring_composite_z_series + EWMA limits",
+      "unit": "z/EWMA",
+      "format": "line chart",
+      "access": "GRATIS",
+      "notes": "Un gráfico simple, sin percentiles poblacionales."
+    },
+    {
+      "id": "free_insight",
+      "label": {
+        "es": "Insight",
+        "en": "Insight",
+        "pt": "Insight"
+      },
+      "origin": "domain_z_latest max contribution + context flags",
+      "unit": "text",
+      "format": "1 short sentence generated from structured outputs",
+      "access": "GRATIS",
+      "notes": "LLM opcional solo para redacción; nunca recalcula."
+    },
+    {
+      "id": "domain_breakdown",
+      "label": {
+        "es": "Qué cambió",
+        "en": "What changed",
+        "pt": "O que mudou"
+      },
+      "origin": "domain_z_latest",
+      "unit": "baseline SD",
+      "format": "3-domain table",
+      "access": "INFORME_COMPLETO"
+    },
+    {
+      "id": "personal_baseline_comparison",
+      "label": {
+        "es": "Comparativa con tu baseline",
+        "en": "Comparison with your baseline",
+        "pt": "Comparação com seu baseline"
+      },
+      "origin": "domain_z_latest + monitoring_composite_z_series",
+      "unit": "baseline SD",
+      "format": "current-vs-personal-baseline table",
+      "access": "INFORME_COMPLETO",
+      "notes": "Sustituye comparativas por país/percentil hasta disponer de normas validadas para las tareas propias."
+    },
+    {
+      "id": "sensitivity",
+      "label": {
+        "es": "Sensibilidad",
+        "en": "Sensitivity",
+        "pt": "Sensibilidade"
+      },
+      "origin": "engine sensitivity scenarios",
+      "unit": "signal points",
+      "format": "scenario table",
+      "access": "INFORME_COMPLETO"
+    },
+    {
+      "id": "methodology",
+      "label": {
+        "es": "Metodología",
+        "en": "Methodology",
+        "pt": "Metodologia"
+      },
+      "origin": "model_spec + model_card",
+      "unit": "text",
+      "format": "summary",
+      "access": "INFORME_COMPLETO"
+    },
+    {
+      "id": "action_plan",
+      "label": {
+        "es": "Plan de seguimiento",
+        "en": "Follow-up plan",
+        "pt": "Plano de acompanhamento"
+      },
+      "origin": "category + quality/context flags",
+      "unit": "text",
+      "format": "action checklist",
+      "access": "INFORME_COMPLETO",
+      "notes": "No prescribe tratamiento ni medicación."
+    },
+    {
+      "id": "scenarios",
+      "label": {
+        "es": "Escenarios",
+        "en": "Scenarios",
+        "pt": "Cenários"
+      },
+      "origin": "recalculation under structured sensitivity inputs",
+      "unit": "0-100",
+      "format": "table",
+      "access": "INFORME_COMPLETO"
+    },
+    {
+      "id": "longitudinal_tracking",
+      "label": {
+        "es": "Seguimiento",
+        "en": "Tracking",
+        "pt": "Acompanhamento"
+      },
+      "origin": "new sessions recalculated through same engine",
+      "unit": "time series",
+      "format": "history + alerts",
+      "access": "SUSCRIPCION",
+      "activation": "Solo después de demostrar recurrencia real."
+    }
+  ],
+  "free_preview": {
+    "included": [
+      "signal_index",
+      "category",
+      "trend_chart",
+      "free_insight"
+    ],
+    "not_given": [
+      {
+        "item": "Desglose completo por dominio",
+        "why": "Explica qué está impulsando la señal y aumenta el valor de decisión del informe."
+      },
+      {
+        "item": "Comparativa completa contra tu baseline",
+        "why": "Muestra magnitud por dominio en DE personales y ayuda a distinguir una señal aislada de una deriva coherente."
+      },
+      {
+        "item": "Sensibilidad y escenarios",
+        "why": "Permiten saber si el resultado depende de un dominio o de un cambio robusto."
+      },
+      {
+        "item": "Plan de seguimiento personalizado",
+        "why": "Convierte el resultado en próximos pasos concretos sin emitir diagnóstico."
+      },
+      {
+        "item": "Metodología detallada y control de calidad",
+        "why": "Da contexto de confiabilidad y limita malas interpretaciones."
+      }
+    ]
+  },
+  "full_report": {
+    "included": [
+      "Todo lo gratis",
+      "domain_breakdown",
+      "personal_baseline_comparison",
+      "sensitivity",
+      "scenarios",
+      "action_plan",
+      "methodology",
+      "quality flags",
+      "context annotations"
+    ],
+    "explicitly_not_available": [
+      "Probabilidad de Alzheimer/MCI/demencia",
+      "Percentil por país no validado",
+      "Recomendación farmacológica",
+      "Diagnóstico"
+    ]
+  },
+  "subscription": {
+    "included": [
+      "Historial longitudinal",
+      "Recordatorios",
+      "Alertas por cambio de categoría",
+      "Recálculo tras cada sesión"
+    ],
+    "condition": "No lanzar hasta que la fase 1 demuestre repetición suficiente; ver monetizacion.json."
+  }
+}

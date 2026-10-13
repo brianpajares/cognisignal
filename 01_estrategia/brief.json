@@ -1,0 +1,420 @@
+{
+  "one_liner": "Para adultos de 55+ y sus hijos cuidadores que notan cambios de memoria pero no saben si son variación normal o una señal que merece evaluación, CogniSignal predice el riesgo de cambio cognitivo significativo respecto del baseline personal a partir de micropruebas digitales de 4–5 minutos y datos simples de contexto, y entrega una señal longitudinal explicable y un informe para conversar con un profesional, para que actúen antes sin presentar un diagnóstico.",
+  "segments": [
+    {
+      "name": "Adultos 55–74 preocupados por memoria",
+      "size_estimate": "Mercado potencial amplio dentro de la población mundial 60+; la ONU proyecta 1.411M personas 60+ en 2030. No se atribuye todo ese universo como SAM.",
+      "priority": 1
+    },
+    {
+      "name": "Hijos/cuidadores de adultos mayores",
+      "size_estimate": "Mercado dual; la OMS estima 5 h/día promedio de cuidado informal en demencia. Tamaño comercial exacto: preliminar.",
+      "priority": 2
+    },
+    {
+      "name": "Programas de envejecimiento saludable / clínicas / aseguradoras",
+      "size_estimate": "B2B2C posterior; mercado diagnóstico Alzheimer estimado US$10,2B 2026.",
+      "priority": 3
+    }
+  ],
+  "countries": [
+    {
+      "country": "United States",
+      "why": "Alta prevalencia documentada, disposición de pago, ecosistema de screening y terapias; regulación exigente obliga a claims prudentes.",
+      "entry_order": 1
+    },
+    {
+      "country": "United Kingdom",
+      "why": "Mercado digital maduro, idioma inglés y presión sobre acceso; requiere revisión UK MDR/MHRA.",
+      "entry_order": 2
+    },
+    {
+      "country": "Brazil",
+      "why": "Gran población envejeciente, portugués, oportunidad LATAM y demanda informacional; pricing PPP.",
+      "entry_order": 3
+    },
+    {
+      "country": "Mexico",
+      "why": "Escala hispanohablante, cercanía a EE.UU. y precio PPP.",
+      "entry_order": 4
+    },
+    {
+      "country": "Spain",
+      "why": "Envejecimiento y mercado UE; entrada tras definir estrategia MDR.",
+      "entry_order": 5
+    }
+  ],
+  "pain_stats": [
+    {
+      "metric": "Personas con demencia",
+      "value": "57 millones",
+      "year": "2021",
+      "region": "Mundial",
+      "source_id": "S1"
+    },
+    {
+      "metric": "Incidencia anual",
+      "value": "~10 millones de casos nuevos/año",
+      "year": "2026",
+      "region": "Mundial",
+      "source_id": "S2"
+    },
+    {
+      "metric": "Coste económico",
+      "value": "USD 1,3 billones",
+      "year": "2019",
+      "region": "Mundial",
+      "source_id": "S3"
+    },
+    {
+      "metric": "Tiempo de cuidado informal",
+      "value": "5 h/día en promedio",
+      "year": "2019/2026",
+      "region": "Mundial",
+      "source_id": "S4"
+    },
+    {
+      "metric": "Carga en LMIC",
+      "value": ">60% de personas con demencia",
+      "year": "2021",
+      "region": "Mundial",
+      "source_id": "S5"
+    },
+    {
+      "metric": "Riesgo modificable",
+      "value": "hasta 45% potencialmente prevenible/retrasable",
+      "year": "2026",
+      "region": "Mundial",
+      "source_id": "S6"
+    },
+    {
+      "metric": "Población 60+",
+      "value": "1.411 millones proyectados",
+      "year": "2030",
+      "region": "Mundial",
+      "source_id": "S7"
+    },
+    {
+      "metric": "Prevalencia Alzheimer 65+",
+      "value": "7,4M; 11% (~1 de 9)",
+      "year": "2026",
+      "region": "EE.UU.",
+      "source_id": "S8"
+    }
+  ],
+  "demand_signals": [
+    {
+      "signal": "Google Trends / literatura",
+      "detail": "La literatura de Google Trends encontró aumento sostenido del interés global por Alzheimer 2014–2020 y fuerte relación con temas dementia, early-onset y caregiver.",
+      "volume": "RSV relativo, no volumen absoluto; Dementia=100 entre temas relacionados del estudio.",
+      "trend": "Al alza en el periodo publicado",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8703029/"
+    },
+    {
+      "signal": "Keyword: memory loss evaluation",
+      "detail": "Intención alta: usuario ya busca evaluación.",
+      "volume": "~1.300 búsquedas/mes UK según fuente SEO secundaria; usar solo como señal preliminar, no decision-grade.",
+      "trend": "Preliminar",
+      "source": "https://ranklocally.uk/top-seo-keywords-for-neuropsychologists"
+    },
+    {
+      "signal": "Keyword cluster",
+      "detail": "memory test; dementia test; Alzheimer's test; memory loss; cognitive test; early signs of dementia",
+      "volume": "No verificado con proveedor de keywords en esta etapa; validar con Keyword Planner/Semrush antes de forecast.",
+      "trend": "Demanda cualitativa confirmada por Trends y comunidades.",
+      "source": "https://www.semrush.com/free-tools/keyword-search-volume-checker/"
+    },
+    {
+      "signal": "Comunidades",
+      "detail": "r/dementia y r/DementiaHelp muestran preguntas recurrentes sobre señales tempranas, incertidumbre y deseo de monitorizar declive funcional.",
+      "volume": "Cualitativo",
+      "trend": "Activo en 2026",
+      "source": "https://www.reddit.com/r/dementia/"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "BrainCheck",
+      "price": "US$350/mes incluye 10 baterías; US$25 por batería adicional (precio clínico visible)",
+      "business_model": "B2B SaaS clínico + pago por batería",
+      "weakness": "Orientado a profesionales; FDA Class II; fricción y precio altos para autocuidado B2C longitudinal.",
+      "source": "https://app.braincheck.com/registration_pages/clinical_checkout?plan_name=per_test_25"
+    },
+    {
+      "name": "Cogstate Cognigram",
+      "price": "Cotización / no precio público verificado",
+      "business_model": "B2B healthcare, investigación y life sciences",
+      "weakness": "10–15 min y foco clínico/institucional; poca propuesta B2C de seguimiento diario ultracorto.",
+      "source": "https://www.cogstate.com/healthcare/cognigram/"
+    },
+    {
+      "name": "Linus Health",
+      "price": "Cotización / no precio público verificado",
+      "business_model": "B2B healthcare + life sciences",
+      "weakness": "iPad/provider workflow; excelente screening puntual, menos enfocado a hábito B2C y señal longitudinal cotidiana.",
+      "source": "https://linushealth.com/about-assessments"
+    },
+    {
+      "name": "Altoida",
+      "price": "Cotización / no precio público verificado",
+      "business_model": "B2B investigación/healthcare; biomarcadores digitales",
+      "weakness": "AR/tablet y enfoque clínico/investigacional; complejidad mayor que un MVP web B2C.",
+      "source": "https://altoida.com/our-science/"
+    },
+    {
+      "name": "Neurotrack",
+      "price": "Cotización / no precio público verificado",
+      "business_model": "B2B2C con health plans/providers",
+      "weakness": "Venta institucional; menos acceso directo y auto-servido para familias.",
+      "source": "https://neurotrack.com/health-plans"
+    }
+  ],
+  "solution": {
+    "chosen": "A. Daily Cognitive Signal",
+    "alternatives": [
+      {
+        "name": "A. Daily Cognitive Signal",
+        "description": "Microprueba web de 4–5 min + baseline personal de 14 días + seguimiento semanal; genera señal de cambio y recomendación de siguiente paso.",
+        "scores": {
+          "valor_percibido": 5,
+          "precision_alcanzable": 4,
+          "facilidad_inputs": 5,
+          "costo_operacion": 5,
+          "viralidad": 4,
+          "riesgo_legal": 4
+        },
+        "total": 27
+      },
+      {
+        "name": "B. Passive Life Sensor",
+        "description": "GPS, tipeo, voz y navegación pasiva desde móvil para estimar cambio funcional.",
+        "scores": {
+          "valor_percibido": 5,
+          "precision_alcanzable": 3,
+          "facilidad_inputs": 4,
+          "costo_operacion": 2,
+          "viralidad": 2,
+          "riesgo_legal": 1
+        },
+        "total": 17
+      },
+      {
+        "name": "C. One-shot Alzheimer Predictor",
+        "description": "Test único que entrega probabilidad de Alzheimer y horizonte de aparición.",
+        "scores": {
+          "valor_percibido": 5,
+          "precision_alcanzable": 1,
+          "facilidad_inputs": 4,
+          "costo_operacion": 4,
+          "viralidad": 4,
+          "riesgo_legal": 1
+        },
+        "total": 19
+      }
+    ],
+    "scoring": "Escala 1–5; en riesgo legal 5=menor riesgo. Ganador: 27/30."
+  },
+  "prediction": {
+    "target": "Cambio cognitivo longitudinal observado respecto del baseline personal; el MVP no estima probabilidad futura de enfermedad.",
+    "unit": "Índice estadístico 0–100 + categoría stable / watch / discuss_with_clinician",
+    "horizon": "Seguimiento longitudinal después de un baseline de 6 sesiones válidas; sin horizonte predictivo clínico en v1.",
+    "granularity": "Por usuario, con dominios memoria, atención/velocidad y función ejecutiva.",
+    "problem_type": "Monitorización estadística intraindividual determinista (z-scores + EWMA unilateral); no clasificación clínica.",
+    "model_candidates": [
+      "CS-LCM v1.0: baseline personal + z-score intraindividual + EWMA unilateral, modelo activo.",
+      "Reliable Change Index solo como respaldo cuando existan fiabilidad test-retest y SD validadas para las microtareas propias.",
+      "Modelos supervisados o de supervivencia quedan fuera de v1 hasta disponer de datos, licencia y validación clínica externa.",
+      "LLM solo puede redactar; nunca calcula ni modifica el score."
+    ]
+  },
+  "inputs_hypothesis": [
+    "Edad (años)",
+    "País/idioma",
+    "Nivel educativo (rangos)",
+    "Autoevaluación: ¿notó cambios de memoria en 6 meses? (sí/no/indeciso)",
+    "Sueño de la noche anterior (horas o rango)",
+    "Medicaciones/situaciones que puedan afectar rendimiento, en categorías no identificables (opcional)",
+    "Resultados de 3 microtareas: memoria visual/verbal, tiempo de reacción/atención, inhibición/función ejecutiva",
+    "Repetición semanal del test para construir baseline y tendencia"
+  ],
+  "mvp": {
+    "in": [
+      "Landing EN/ES/PT con claim de seguimiento de salud cognitiva, no diagnóstico",
+      "Consentimiento y aviso médico claros",
+      "Microevaluación 4–5 min con 3 tareas",
+      "Baseline inicial + score de calidad de sesión",
+      "Vista previa <90 s tras completar: estable / repetir / cambio a vigilar",
+      "Email gate para informe completo; copia al dueño en fase validación",
+      "Informe PDF/HTML con tendencia, dominios, factores de confusión y próximos pasos",
+      "Repetición programable por enlace/email, sin sensores pasivos"
+    ],
+    "out": [
+      "Diagnóstico de Alzheimer, MCI o demencia",
+      "Claim '2–7 años antes'",
+      "GPS continuo, keylogging, reconocimiento facial o escucha pasiva",
+      "Integración EHR, wearable o biomarcadores sanguíneos",
+      "Recomendaciones terapéuticas o farmacológicas",
+      "Uso en menores o evaluación de capacidad legal"
+    ],
+    "v2": [
+      "Voz activa opt-in (tarea de fluencia verbal) con biomarcadores acústicos",
+      "Integraciones Apple Health/Google Health Connect solo con consentimiento",
+      "Portal cuidador con consentimiento del evaluado",
+      "Validación clínica prospectiva y posible ruta SaMD",
+      "B2B2C para clínicas, aseguradoras y programas de envejecimiento"
+    ]
+  },
+  "metrics": {
+    "product": [
+      {
+        "metric": "Visita→inicio",
+        "target": ">=35%"
+      },
+      {
+        "metric": "Inicio→vista previa",
+        "target": ">=70%"
+      },
+      {
+        "metric": "Vista previa→solicitud informe",
+        "target": ">=35%"
+      },
+      {
+        "metric": "Solicitud→pago (fase 2)",
+        "target": ">=12%"
+      }
+    ],
+    "model": [
+      {
+        "metric": "AUC para decline/no-decline",
+        "target": ">=0,75 validación externa antes de claim predictivo"
+      },
+      {
+        "metric": "Brier score / calibración",
+        "target": "Brier <=0,18 y slope 0,8–1,2"
+      },
+      {
+        "metric": "Test-retest reliability del score",
+        "target": "ICC >=0,80 en usuarios estables"
+      },
+      {
+        "metric": "Sensibilidad a cambio",
+        "target": "Detectar cambio predefinido con >=80% sensibilidad manteniendo >=70% especificidad, sujeto a validación"
+      }
+    ],
+    "business": [
+      {
+        "metric": "CAC blended",
+        "target": "<=US$18 fase 2"
+      },
+      {
+        "metric": "Ingreso por comprador",
+        "target": "US$29–49 primer informe / US$79–99 bundle trimestral"
+      },
+      {
+        "metric": "Margen bruto por informe",
+        "target": ">=85% sin revisión clínica humana"
+      }
+    ]
+  },
+  "business_model": {
+    "free": "Microtest + vista previa de señal + educación y recomendación general. En fase 1, email obligatorio para informe completo.",
+    "paid": "Fase 2: informe longitudinal completo y bundles de seguimiento; suscripción solo si se prueba recurrencia. B2B2C posterior.",
+    "pricing": [
+      {
+        "country": "United States",
+        "single_report": "US$39",
+        "quarterly_bundle": "US$89",
+        "logic": "Ancla en gasto de evaluación y alta WTP; muy por debajo de herramientas clínicas B2B."
+      },
+      {
+        "country": "United Kingdom",
+        "single_report": "£29",
+        "quarterly_bundle": "£69",
+        "logic": "PPP/competencia digital."
+      },
+      {
+        "country": "Spain",
+        "single_report": "€29",
+        "quarterly_bundle": "€69",
+        "logic": "PPP y menor WTP que EE.UU."
+      },
+      {
+        "country": "Brazil",
+        "single_report": "R$79",
+        "quarterly_bundle": "R$179",
+        "logic": "Ajuste PPP; estimación a validar."
+      },
+      {
+        "country": "Mexico",
+        "single_report": "MX$349",
+        "quarterly_bundle": "MX$799",
+        "logic": "Ajuste PPP; estimación a validar."
+      }
+    ],
+    "upsells": [
+      "Bundle familiar 2 perfiles",
+      "Seguimiento 6 meses",
+      "Informe bilingüe para consulta",
+      "B2B2C licencias por población"
+    ],
+    "channels": [
+      "SEO programático sobre síntomas/edad/qué hacer",
+      "Comunidades de cuidadores",
+      "Creadores de longevidad y salud 50+",
+      "Alianzas con clínicas de memoria/geriatría",
+      "Newsletters de caregiving"
+    ],
+    "phases": [
+      "Fase 1 VALIDACIÓN: test gratis → vista previa → email para informe completo; copia automática al dueño; medir intención y recurrencia.",
+      "Fase 2 COBRO: pasarela antes del informe completo; A/B de US$29/39/49 y bundles."
+    ],
+    "viral_hook": "Tarjeta privada/compartible 'My cognitive baseline is set' sin puntaje médico ni etiqueta de enfermedad + invitación a un familiar para crear su propio baseline."
+  },
+  "risks": [
+    {
+      "risk": "Regulatorio / SaMD",
+      "severity": "Muy alto",
+      "mitigation": "Evitar diagnóstico y claims de enfermedad en MVP; presentar wellness/monitoring; revisión legal por jurisdicción antes de performance marketing; bloquear uso clínico hasta validación."
+    },
+    {
+      "risk": "Falsos positivos / ansiedad",
+      "severity": "Muy alto",
+      "mitigation": "Requerir repetición y persistencia; comunicar incertidumbre; no mostrar probabilidades de Alzheimer; rutas claras a profesional."
+    },
+    {
+      "risk": "Falsos negativos",
+      "severity": "Alto",
+      "mitigation": "Aviso de que un resultado estable no descarta enfermedad; usar red flags y recomendar evaluación si hay síntomas funcionales."
+    },
+    {
+      "risk": "Datos personales sensibles",
+      "severity": "Alto",
+      "mitigation": "Minimización, cifrado, consentimiento, borrado, no GPS/keylogging en MVP, separación identidad-resultados."
+    },
+    {
+      "risk": "Sesgo cultural/educativo/práctica",
+      "severity": "Alto",
+      "mitigation": "Tareas language-light cuando sea posible; modelos estratificados; baseline intraindividual; validación EN/ES/PT."
+    },
+    {
+      "risk": "Dependencia de dataset/licencias",
+      "severity": "Medio-Alto",
+      "mitigation": "Agente 2 debe confirmar ADNI/otros datasets y licencias antes de entrenar; fallback estadístico determinista."
+    },
+    {
+      "risk": "Competencia clínica fuerte",
+      "severity": "Medio",
+      "mitigation": "Diferenciar por B2C, hábito longitudinal, tiempo <5 min, bajo costo, familiar/caregiver y claridad del informe."
+    }
+  ],
+  "scorecard": {
+    "mercado": 23,
+    "dolor": 20,
+    "disposicion_pago": 16,
+    "factibilidad_datos_modelo": 10,
+    "viralidad": 7,
+    "rapidez_mvp": 8,
+    "total": 84
+  },
+  "verdict": "PIVOT — se conserva la idea de detección temprana, pero se cambia de 'predecir Alzheimer 2–7 años antes con sensores pasivos' a 'detectar y predecir cambio cognitivo longitudinal que amerita evaluación'. Este pivot ya está aplicado."
+}

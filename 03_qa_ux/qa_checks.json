@@ -1,0 +1,205 @@
+[
+  {
+    "check": "Entrada stage_completed=2",
+    "resultado": "PASS",
+    "evidencia": "handoff.json stage_completed=2",
+    "severidad": "CRÍTICO",
+    "acción": "Ninguna"
+  },
+  {
+    "check": "Inventario de archivos esperados",
+    "resultado": "PASS",
+    "evidencia": "brief.json, model_spec.json, engine_reference.py, test_vectors.json, inputs.schema.json, outputs_spec.json, monetizacion.json, model_card.md, fuentes_datos.csv y Excel presentes",
+    "severidad": "CRÍTICO",
+    "acción": "Ninguna"
+  },
+  {
+    "check": "drive_manifest hashes originales",
+    "resultado": "PASS",
+    "evidencia": "9/9 entradas coincidían antes de cambios QA",
+    "severidad": "MAYOR",
+    "acción": "Regenerar hashes de archivos modificados al cierre"
+  },
+  {
+    "check": "Excel hojas/encabezados",
+    "resultado": "PASS",
+    "evidencia": "9 hojas; Parametros, Motor, Casos_Prueba y Changelog inspeccionados",
+    "severidad": "MAYOR",
+    "acción": "Ninguna"
+  },
+  {
+    "check": "Excel errores de fórmula",
+    "resultado": "PASS",
+    "evidencia": "0 coincidencias #REF/#DIV0/#VALUE/#NAME/#N/A",
+    "severidad": "CRÍTICO",
+    "acción": "Ninguna"
+  },
+  {
+    "check": "Reimplementación independiente 20 vectores",
+    "resultado": "PASS",
+    "evidencia": "20/20 qa_engine.py vs expected con rtol=1e-6",
+    "severidad": "CRÍTICO",
+    "acción": "Ninguna"
+  },
+  {
+    "check": "QA engine vs engine_reference",
+    "resultado": "PASS",
+    "evidencia": "20/20 originales + valid robustez coinciden",
+    "severidad": "CRÍTICO",
+    "acción": "Ninguna"
+  },
+  {
+    "check": "Validación de fechas calendario",
+    "resultado": "FIXED",
+    "evidencia": "motor aceptaba formato YYYY-MM-DD sin validar calendario real si se omitía JSON Schema",
+    "severidad": "MAYOR",
+    "acción": "Añadido datetime.date.fromisoformat"
+  },
+  {
+    "check": "maxItems sessions=104",
+    "resultado": "FIXED",
+    "evidencia": "schema limitaba 104; motor standalone solo comprobaba no vacío",
+    "severidad": "MAYOR",
+    "acción": "Motor ahora exige 1..104"
+  },
+  {
+    "check": "additionalProperties sesiones/top-level",
+    "resultado": "FIXED",
+    "evidencia": "schema false; motor standalone ignoraba extras",
+    "severidad": "MAYOR",
+    "acción": "Motor ahora rechaza campos no declarados"
+  },
+  {
+    "check": "NaN/Infinity",
+    "resultado": "PASS",
+    "evidencia": "T23/T24 runtime: ambos motores rechazan no finitos",
+    "severidad": "MAYOR",
+    "acción": "Casos documentados en test_vectors.json"
+  },
+  {
+    "check": "Unidades ms vs segundos",
+    "resultado": "PASS",
+    "evidencia": "T22 0.52 ms rechazado por rango 150..3000",
+    "severidad": "MAYOR",
+    "acción": "Microcopy especifica ms y usuario no introduce métricas manualmente"
+  },
+  {
+    "check": "Monotonicidad deterioro",
+    "resultado": "PASS",
+    "evidencia": "T29=17.1657 < T30=49.1266 con baseline idéntico",
+    "severidad": "MAYOR",
+    "acción": "Ninguna"
+  },
+  {
+    "check": "Coherencia brief-modelo",
+    "resultado": "FIXED",
+    "evidencia": "brief.json heredaba probabilidad 0-1 y horizonte 6-12m incompatibles con CS-LCM v1",
+    "severidad": "MAYOR",
+    "acción": "brief.json alineado a monitorización observacional"
+  },
+  {
+    "check": "Clinical probability",
+    "resultado": "PASS",
+    "evidencia": "clinical_probability siempre null; outputs excluyen probabilidad de Alzheimer/MCI/demencia",
+    "severidad": "CRÍTICO",
+    "acción": "Mantener disclaimer visible"
+  },
+  {
+    "check": "EWMA λ=0.2",
+    "resultado": "verificado",
+    "evidencia": "NIST https://www.itl.nist.gov/div898/handbook/mpc/section2/mpc2211.htm sugiere 0.2-0.3",
+    "severidad": "MAYOR",
+    "acción": "Ninguna"
+  },
+  {
+    "check": "EWMA k warn/action 2/3",
+    "resultado": "verificado",
+    "evidencia": "NIST misma fuente: k generalmente 2 o 3",
+    "severidad": "MAYOR",
+    "acción": "Etiquetar como límites estadísticos, no clínicos"
+  },
+  {
+    "check": "d-prime corrección +0.5/+1",
+    "resultado": "verificado",
+    "evidencia": "PMC3434682 loglinear approach",
+    "severidad": "MAYOR",
+    "acción": "Ninguna"
+  },
+  {
+    "check": "RCI 1.96",
+    "resultado": "verificado",
+    "evidencia": "PMC8581253 fórmula y umbral ±1.96",
+    "severidad": "MAYOR",
+    "acción": "Mantener respaldo inactivo"
+  },
+  {
+    "check": "World Bank PPP 2025",
+    "resultado": "verificado",
+    "evidencia": "PA.NUS.PPP: US 1.00, GB 0.68, ES 0.57, BR 2.55, MX 10.33; licencia CC BY-4.0",
+    "severidad": "MAYOR",
+    "acción": "Citar y revisar en pricing refresh"
+  },
+  {
+    "check": "Stripe tarifas 5 mercados",
+    "resultado": "verificado",
+    "evidencia": "US 2.9%+$0.30; GB 1.5%+£0.20; ES 1.5%+€0.25; BR 3.99%+R$0.39; MX 3.6%+MXN3",
+    "severidad": "MENOR",
+    "acción": "Revalidar antes de activar cobro"
+  },
+  {
+    "check": "Licencia jsPsych",
+    "resultado": "verificado",
+    "evidencia": "https://github.com/jspsych/jsPsych MIT",
+    "severidad": "MAYOR",
+    "acción": "Conservar avisos de licencia"
+  },
+  {
+    "check": "Licencia statsmodels",
+    "resultado": "verificado",
+    "evidencia": "statsmodels pyproject: BSD-3-Clause",
+    "severidad": "MENOR",
+    "acción": "No dependencia activa v1"
+  },
+  {
+    "check": "Licencia XGBoost",
+    "resultado": "verificado",
+    "evidencia": "https://github.com/dmlc/xgboost Apache-2.0",
+    "severidad": "MENOR",
+    "acción": "No dependencia activa v1"
+  },
+  {
+    "check": "Licencia TestMyBrain",
+    "resultado": "verificado",
+    "evidencia": "LGPLv3 código / CC-BY-SA-4.0 estímulos; no incorporado",
+    "severidad": "MAYOR",
+    "acción": "Mantener fuera de v1"
+  },
+  {
+    "check": "ADNI comercial",
+    "resultado": "verificado",
+    "evidencia": "terms restringen materiales a uso personal/no comercial/no clínico salvo permiso; no dependencia v1",
+    "severidad": "MAYOR",
+    "acción": "Mantener fuera del motor comercial"
+  },
+  {
+    "check": "OCTAL licencia",
+    "resultado": "verificado",
+    "evidencia": "académica; uso comercial requiere contacto/licencia OUI",
+    "severidad": "MAYOR",
+    "acción": "Mantener fuera de v1"
+  },
+  {
+    "check": "baseline_sessions=6",
+    "resultado": "no_verificado",
+    "evidencia": "decisión MVP, no validación prospectiva",
+    "severidad": "MAYOR",
+    "acción": "Open issue de validación prospectiva"
+  },
+  {
+    "check": "min_valid_domains=2",
+    "resultado": "no_verificado",
+    "evidencia": "guardrail de producto",
+    "severidad": "MAYOR",
+    "acción": "Open issue de validación prospectiva"
+  }
+]

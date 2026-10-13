@@ -1,0 +1,16 @@
+{
+  "model_version": "CS-LCM-1.0",
+  "generated_at": "2026-10-13",
+  "parameters": {
+    "ewma_lambda": 0.2,
+    "ewma_k_warn": 2.0,
+    "ewma_k_action": 3.0,
+    "baseline_sessions": 6,
+    "min_valid_domains": 2,
+    "sd_epsilon": 1e-09,
+    "dprime_cell_add": 0.5,
+    "dprime_total_add": 1.0,
+    "rci_z_95_two_sided": 1.96
+  },
+  "source_of_truth": "/Apps/cognisignal/base/base_cognisignal.xlsx#Parametros"
+}
